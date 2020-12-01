@@ -27,19 +27,20 @@ a {
   text-decoration: none;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 160px;
-  max-width: 1920px;
-}
-
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #000000;
+}
+.container {
+  padding: 0 160px;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.header__container {
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: #000000;
 }
 
 .header__logo {
@@ -50,14 +51,24 @@ a {
 .hedaer__list {
   display: flex;
 }
-.header__item {
-  margin-right: 60px;
+.header__item:not(:last-child) {
+  margin-right: 16.5%;
 }
 .header__link {
   color: #ffffff;
 }
-.header__item-last {
-  margin-left: 280px;
+.hero__login {
+  margin-left: auto;
+  color: #ffffff;
+}
+.hero__login::before {
+    content: '';
+    padding-left: 14px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url('../pictures/icons/enter-lk.svg');
+    background-repeat: no-repeat;
 }
 .main {
 }
