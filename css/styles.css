@@ -1,0 +1,81 @@
+:root {
+  --violet: #9D5CD0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body, ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 160px;
+  max-width: 1920px;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #000000;
+}
+
+.header__logo {
+  margin-right: 180px;
+}
+.header__nav {
+}
+.hedaer__list {
+  display: flex;
+}
+.header__item {
+  margin-right: 60px;
+}
+.header__link {
+  color: #ffffff;
+}
+.header__item-last {
+  margin-left: 280px;
+}
+.main {
+}
+.hero {
+}
+.hero__nav {
+}
+.hero__list {
+}
+.hero__item {
+}
+.hero__select {
+}
+.hero__option {
+}
+.hero__form {
+}
+.hero__btn {
+}
+.hero__input {
+}
