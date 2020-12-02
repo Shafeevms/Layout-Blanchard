@@ -13,7 +13,7 @@
     <div class="container header__container">
       <img src="./pictures/Лого.svg" alt="логотип" class="header__logo">
       <nav class="header__nav">
-        <ul class="hedaer__list">
+        <ul class="header__list flex">
           <li class="header__item"><a href="#" class="header__link">О&nbsp;нас</a></li>
           <li class="header__item"><a href="#" class="header__link">Галерея</a></li>
           <li class="header__item"><a href="#" class="header__link">Каталог</a></li>
@@ -28,9 +28,9 @@
   </header>
   <main class="main">
     <section class="hero">
-      <div class="container">
-        <nav class="hero__nav">
-          <ul class="hero__list">
+      <nav class="hero__nav flex">
+        <div class="container flex">
+          <ul class="hero__list flex">
             <li class="hero__item">
               <select name="" class="hero__select">
                 <option value="1" class="hero__option">Реализм</option>
@@ -57,12 +57,12 @@
               </select>
             </li>
           </ul>
+          <form action="GET" class="hero__form flex">
+            <button type="submit" class="hero__btn"></button>
+            <input type="text" class="hero__input" placeholder="Поиск по сайту">
+          </form>
+        </div>
         </nav>
-        <form action="GET" class="hero__form">
-          <button type="submit" class="hero__btn"></button>
-          <input type="text" class="hero__input ">
-        </form>
-      </div>
     </section>
   </main>
 </body>
