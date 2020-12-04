@@ -10,67 +10,78 @@
 </head>
 <body>
   <header class="header">
-    <div class="container header__container">
-      <img src="./img/Лого.svg" alt="логотип" class="header__logo">
-      <nav class="header__nav">
-        <ul class="header__list flex">
-          <li class="header__item"><a href="#" class="header__link">О&nbsp;нас</a></li>
-          <li class="header__item"><a href="#" class="header__link">Галерея</a></li>
-          <li class="header__item"><a href="#" class="header__link">Каталог</a></li>
-          <li class="header__item"><a href="#" class="header__link">События</a></li>
-          <li class="header__item"><a href="#" class="header__link">Издания</a></li>
-          <li class="header__item"><a href="#" class="header__link">Проекты</a></li>
-          <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="hero__login">Войти</a>
+    <div class="header__top">
+      <div class="container header__container">
+        <img src="./img/Лого.svg" alt="логотип" class="header__logo">
+        <nav class="header__nav">
+          <ul class="header__list flex reset">
+            <li class="header__item"><a href="#" class="header__link">О&nbsp;нас</a></li>
+            <li class="header__item"><a href="#" class="header__link">Галерея</a></li>
+            <li class="header__item"><a href="#" class="header__link">Каталог</a></li>
+            <li class="header__item"><a href="#" class="header__link">События</a></li>
+            <li class="header__item"><a href="#" class="header__link">Издания</a></li>
+            <li class="header__item"><a href="#" class="header__link">Проекты</a></li>
+            <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="hero__login">Войти</a>
+      </div>
     </div>
+    <nav class="header__bottom">
+      <div class="container flex">
+        <ul class="hero__list flex reset">
+          <li class="hero__item">
+            <select name="" class="hero__select">
+              <option value="1" class="hero__option">Реализм</option>
+            </select>
+          </li>
+          <li class="hero__item">
+            <select name="" class="hero__select">
+              <option value="1" class="hero__option">Импрессионизм</option>
+            </select>
+          </li>
+          <li class="hero__item">
+            <select name="" class="hero__select">
+              <option value="1" class="hero__option">Постимпрессионизм</option>
+            </select>
+          </li>
+          <li class="hero__item">
+            <select name="" class="hero__select">
+              <option value="1" class="hero__option">Авангард</option>
+            </select>
+          </li>
+          <li class="hero__item">
+            <select name="" class="hero__select">
+              <option value="1" class="hero__option">Футуризм</option>
+            </select>
+          </li>
+        </ul>
+        <form action="GET" class="hero__form flex">
+          <button type="submit" class="hero__btn"></button>
+          <input type="text" class="hero__input" placeholder="Поиск по сайту">
+        </form>
+      </div>
+    </nav>
   </header>
   <main class="main">
     <section class="hero">
-      <nav class="hero__nav">
-        <div class="container flex">
-          <ul class="hero__list flex">
-            <li class="hero__item">
-              <select name="" class="hero__select">
-                <option value="1" class="hero__option">Реализм</option>
-              </select>
-            </li>
-            <li class="hero__item">
-              <select name="" class="hero__select">
-                <option value="1" class="hero__option">Импрессионизм</option>
-              </select>
-            </li>
-            <li class="hero__item">
-              <select name="" class="hero__select">
-                <option value="1" class="hero__option">Постимпрессионизм</option>
-              </select>
-            </li>
-            <li class="hero__item">
-              <select name="" class="hero__select">
-                <option value="1" class="hero__option">Авангард</option>
-              </select>
-            </li>
-            <li class="hero__item">
-              <select name="" class="hero__select">
-                <option value="1" class="hero__option">Футуризм</option>
-              </select>
-            </li>
-          </ul>
-          <form action="GET" class="hero__form flex">
-            <button type="submit" class="hero__btn"></button>
-            <input type="text" class="hero__input" placeholder="Поиск по сайту">
-          </form>
-        </div>
-      </nav>
+
       <div class="container">
         <div class="hero__container">
-          <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
+          <h2 class="hero__title reset">Прикоснитесь к&nbsp;прекрасному</h2>
         <p class="hero__text">
           Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
         </p>
         <button href="#" class="hero__button">Подписаться на рассылку</button>
         </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <h3 class="section__title about-us__title reset">О нас</h3>
+        <p class="about-us__text reset">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+        </p>
       </div>
     </section>
   </main>
