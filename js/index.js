@@ -12,3 +12,14 @@ input.addEventListener('blur', function() {
   input.style.color = '#ffffff';
   input.setAttribute('placeholder', 'Поиск по сайту')
 });
+
+var mySwiper = new Swiper('.hero', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  speed: 300,
+  effect: 'fade',
+  autoplay: {
+    delay: 5000,
+  },
+})

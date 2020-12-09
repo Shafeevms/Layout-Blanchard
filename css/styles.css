@@ -129,12 +129,20 @@ a {
 
 .hero {
   position: relative;
+  top: -71px;
   padding-top: 71px;
-  transform: translateY(-71px);
-  background: url('../img/hero1.jpg') no-repeat;
-  background-size: cover;
+  /* background: url('../img/hero1.jpg') no-repeat;
+  background-size: cover; */
 }
 
+.swiper-wrapper {
+  position: absolute !important;
+  top: 0;
+}
+
+.slider-img {
+  object-fit: contain;
+}
 .hero__list {
   margin-right: 317px;
 }
@@ -154,6 +162,8 @@ a {
 }
 
 .hero__form {
+  position: relative;
+  z-index: 100;
 }
 
 .hero__btn {
@@ -187,11 +197,13 @@ a {
 }
 
 .hero__container {
+  position: relative;
   padding-top: 73px;
   padding-bottom: 122px;
   max-width: 600px;
   color: var(--white);
   font-weight: 700;
+  z-index: 5;
 }
 
 .hero__title{
