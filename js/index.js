@@ -22,4 +22,5 @@ var mySwiper = new Swiper('.hero', {
   autoplay: {
     delay: 5000,
   },
+
 })
