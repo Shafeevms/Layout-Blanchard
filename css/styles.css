@@ -67,8 +67,8 @@ a {
 
 .header__bottom {
   position: relative;
-  padding-top: 23px;
-  padding-bottom: 24px;
+  padding-top: 26px;
+  padding-bottom: 23px;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -90,7 +90,7 @@ a {
 .header__link:focus,
 .hero__login:focus,
 .hero__form:focus,
-.hero__select:focus {
+.hero__item:focus {
   outline: 2px solid #7943A4;
 }
 
@@ -98,7 +98,8 @@ a {
 
 .header__link:hover,
 .hero__login:hover,
-.hero__select:hover {
+.hero__item:hover .hero__option,
+.hero__item:hover .hero__arrow {
   color: #C283F3;
   cursor: pointer;
 }
@@ -152,8 +153,18 @@ a {
   margin-right: 317px;
 }
 
+.hero__select {
+  padding: 0;
+}
 .hero__item:not(:last-child) {
-  margin-right: 104px;
+  margin-right: 115px;
+}
+.hero__item {
+  position: relative;
+  flex-direction: row-reverse;
+}
+.hero__arrow {
+  color: inherit;
 }
 
 .hero__select {
@@ -172,8 +183,8 @@ a {
 }
 
 .hero__btn {
-  margin-right: 9px;
   display: block;
+  margin-right: 20px;
   width: 22px;
   height: 22px;
   color: var(--white);
@@ -190,7 +201,6 @@ a {
   outline: none;
   border-bottom: 1px solid #ffffff;
 }
-
 
 .hero__input::placeholder,
 .hero__input:-ms-input-placeholder,
