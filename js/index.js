@@ -13,7 +13,7 @@ input.addEventListener('blur', function() {
   input.setAttribute('placeholder', 'Поиск по сайту')
 });
 
-var mySwiper = new Swiper('.hero', {
+const mySwiper = new Swiper('.hero', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,

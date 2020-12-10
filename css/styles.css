@@ -96,9 +96,10 @@ a {
 
 
 
-.header__link:hover,
+.header__link:hover ,
 .hero__login:hover,
-.hero__select:hover {
+.hero__select:hover,
+.hero__item:hover {
   color: #C283F3;
   cursor: pointer;
 }
@@ -148,10 +149,15 @@ a {
 }
 
 .hero__item:not(:last-child) {
-  margin-right: 104px;
+  margin-right: 115px;
+}
+
+.hero__item {
+  position: relative;
 }
 
 .hero__select {
+  padding: 0;
   background-color: transparent;
   color: var(--white);
   border: none;
