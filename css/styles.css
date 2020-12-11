@@ -122,12 +122,56 @@ a {
   letter-spacing: 1px;
 }
 
-.main {
+/* dropdown */
+
+.dropdown {
+  position: absolute;
+  top: 43px;
+  padding: 40px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: scroll;
 }
+.dropdown__list {
+
+}
+
+.dropdown__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 220px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  background-image: url('../img/dropdown/d1.jpg');
+  background-repeat: no-repeat;
+}
+
+.dropdown__item:hover,
+.dropdown__item:focus {
+  outline: 2px solid #9D5CD0;
+  cursor: pointer;
+}
+
+.dropdown__item:active {
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(.jpg);
+  outline: 2px solid #D1A9F0;
+}
+
+.dropdown__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.dropdown__scroll {
+}
+
 
 /* HERO */
 
-
+.main {
+}
 .hero {
   position: relative;
   top: -71px;

@@ -6,13 +6,14 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="./css/styles.css">
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -44,40 +45,45 @@
             <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
             </svg>
-            <ul class="hero__select">
+            <ul class="hero__select" data-name="real">
               <li class="hero__option">Реализм</li>
+              <li class="dropdown__await"></li>
             </ul>
           </li>
           <li class="hero__item flex" tabindex="0">
             <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
             </svg>
-            <ul class="hero__select">
+            <ul class="hero__select" data-name="impres">
               <li class="hero__option">Импрессионизм</li>
+              <li class="dropdown__await"></li>
             </ul>
           </li>
           <li class="hero__item flex" tabindex="0">
             <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
             </svg>
-            <ul class="hero__select">
+            <ul class="hero__select" data-name="postimpres">
               <li class="hero__option">Постимпрессионизм</li>
+              <li class="dropdown__await"></li>
             </ul>
           </li>
           <li class="hero__item flex" tabindex="0">
             <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
             </svg>
-            <ul class="hero__select">
+            <ul class="hero__select" data-name="avangard">
               <li class="hero__option">Авангард</li>
+              <li class="dropdown__await"></li>
             </ul>
           </li>
           <li class="hero__item flex" tabindex="0">
             <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
             </svg>
-            <ul class="hero__select">
+            <ul class="hero__select" data-name="futurizm">
               <li class="hero__option">Футуризм</li>
+              <li class="dropdown__await"></li>
             </ul>
           </li>
         </ul>
@@ -119,7 +125,7 @@
       </div>
     </section>
     <section class="galery">
-
+      <div class="dropdown__scroll"></div>
     </section>
   </main>
   <script src="./js/index.js"></script>
