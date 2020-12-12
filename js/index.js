@@ -82,3 +82,10 @@ document.addEventListener('click', function(e) {
     document.querySelectorAll('.dropdown__await').forEach(el => el.innerHTML ='');
   }
 });
+
+// simplebar
+
+Array.prototype.forEach.call(
+  document.querySelectorAll('.dropdown'),
+  el => new SimpleBar()
+);
