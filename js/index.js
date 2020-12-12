@@ -56,8 +56,8 @@ const dropStore = {
 }
 
 const template = items => `
-  <div class="dropdown" data-simplebar>
-    <ul class="dropdown__list reset">
+  <div class="dropdown">
+    <ul class="dropdown__list reset" data-simplebar>
       ${items}
     </ul>
   </div>`
@@ -86,6 +86,6 @@ document.addEventListener('click', function(e) {
 // simplebar
 
 Array.prototype.forEach.call(
-  document.querySelectorAll('.dropdown'),
+  document.querySelectorAll('.dropdown__list'),
   el => new SimpleBar()
 );
