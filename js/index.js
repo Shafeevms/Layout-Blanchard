@@ -24,3 +24,28 @@ const mySwiper = new Swiper('.hero', {
   },
 
 })
+
+// dropdown
+document.addEventListener('click', function(e) {
+  document.querySelectorAll('.dropdown').forEach(el => el.classList.remove('dropdown-visible'));
+  document.querySelectorAll('.hero__arrow').forEach(el => el.classList.remove('rotate'));
+  document.querySelectorAll('.hero__option').forEach(el => el.classList.remove('violet'));
+  if (e.target.classList.contains('hero__option')) {
+    e.target.closest('.hero__item').querySelector('.dropdown').classList.add('dropdown-visible');
+    e.target.closest('.hero__item').querySelector('.hero__arrow').classList.add('rotate');
+    e.target.closest('.hero__item').querySelector('.hero__option').classList.add('violet');
+  }
+  else {
+    document.querySelectorAll('.dropdown').forEach(el => el.classList.remove('dropdown-visible'));
+    document.querySelectorAll('.hero__arrow').forEach(el => el.classList.remove('rotate'));
+    document.querySelectorAll('.hero__option').forEach(el => el.classList.remove('violet'));
+  }
+})
+
+
+// simplebar
+
+Array.prototype.forEach.call(
+  document.querySelectorAll('.dropdown__list'),
+  el => new SimpleBar()
+);

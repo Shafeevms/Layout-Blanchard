@@ -6,13 +6,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/dropdown.css">
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -40,45 +40,134 @@
     <nav class="header__bottom">
       <div class="container flex">
         <ul class="hero__list flex reset">
-          <li class="hero__item">
-            <ul name="" class="hero__select">
-              <li value="1" class="hero__option">Реализм</li>
-            </ul>
+          <li class="hero__item flex" tabindex="0">
+            <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
+            </svg>
+            <h3 class="hero__option reset">Реализм</h3>
+            <div class="dropdown">
+              <ul class="dropdown__list reset" data-simplebar>
+                <li class="dropdown__item d1">
+                  <a href="#" class="dropdown__link">Тинторетто</a>
+                </li>
+                <li class="dropdown__item d2">
+                  <a href="#" class="dropdown__link">Фридрих</a>
+                </li>
+                <li class="dropdown__item d3">
+                  <a href="#" class="dropdown__link">Леонардо</a>
+                </li>
+                <li class="dropdown__item d4">
+                  <a href="#" class="dropdown__link">Верроккьо</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="hero__item">
-            <ul name="" class="hero__select">
-              <li value="1" class="hero__option">Импрессионизм</li>
-            </ul>
+          <li class="hero__item flex" tabindex="0">
+            <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
+            </svg>
+            <h3 class="hero__option reset">Импрессионизм</h3>
+            <div class="dropdown">
+              <ul class="dropdown__list reset" data-simplebar>
+                <li class="dropdown__item d5">
+                  <a href="#" class="dropdown__link">Моне</a>
+                </li>
+                <li class="dropdown__item d6">
+                  <a href="#" class="dropdown__link">Сислей</a>
+                </li>
+                <li class="dropdown__item d7">
+                  <a href="#" class="dropdown__link">Мане</a>
+                </li>
+                <li class="dropdown__item d8">
+                  <a href="#" class="dropdown__link">Ренуар</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="hero__item">
-            <ul name="" class="hero__select">
-              <li value="1" class="hero__option">Постимпрессионизм</li>
-            </ul>
+          <li class="hero__item flex" tabindex="0">
+            <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
+            </svg>
+            <h3 class="hero__option reset">Постимпрессионизм</h3>
+            <div class="dropdown">
+              <ul class="dropdown__list reset" data-simplebar>
+                <li class="dropdown__item d9">
+                  <a href="#" class="dropdown__link">Ван Гог</a>
+                </li>
+                <li class="dropdown__item d10">
+                  <a href="#" class="dropdown__link">Сезанн</a>
+                </li>
+                <li class="dropdown__item d11">
+                  <a href="#" class="dropdown__link">Гоген</a>
+                </li>
+                <li class="dropdown__item d12">
+                  <a href="#" class="dropdown__link">Сёра</a>
+                </li>
+                <li class="dropdown__item d12">
+                  <a href="#" class="dropdown__link">Сёра</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="hero__item">
-            <ul name="" class="hero__select">
-              <li value="1" class="hero__option">Авангард</li>
-            </ul>
+          <li class="hero__item flex" tabindex="0">
+            <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
+            </svg>
+            <h3 class="hero__option reset">Авангард</h3>
+            <div class="dropdown">
+              <ul class="dropdown__list reset" data-simplebar>
+                <li class="dropdown__item d13">
+                  <a href="#" class="dropdown__link">Кандинский</a>
+                </li>
+                <li class="dropdown__item d14">
+                  <a href="#" class="dropdown__link">Маринетти</a>
+                </li>
+                <li class="dropdown__item d15">
+                  <a href="#" class="dropdown__link">Малевич</a>
+                </li>
+                <li class="dropdown__item d16">
+                  <a href="#" class="dropdown__link">Пикассо</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="hero__item">
-            <ul name="" class="hero__select">
-              <li value="1" class="hero__option">Футуризм</li>
-            </ul>
+          <li class="hero__item flex" tabindex="0">
+            <svg class="hero__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L0.999998 1" stroke="currentColor"/>
+            </svg>
+            <h3 class="hero__option reset">Футуризм</h3>
+            <div class="dropdown">
+              <ul class="dropdown__list reset" data-simplebar>
+                <li class="dropdown__item d17">
+                  <a href="#" class="dropdown__link">Карра</a>
+                </li>
+                <li class="dropdown__item d18">
+                  <a href="#" class="dropdown__link">Прателла</a>
+                </li>
+                <li class="dropdown__item d19">
+                  <a href="#" class="dropdown__link">Северини</a>
+                </li>
+                <li class="dropdown__item d20">
+                  <a href="#" class="dropdown__link">Балла</a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
-          <form action="GET" class="hero__form flex" tabindex="0">
-            <button type="submit" class="hero__btn" tabindex="-1">
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
-              </svg>
-            </button>
-            <input type="text" class="hero__input" placeholder="Поиск по сайту">
-          </form>
+        <form action="GET" class="hero__form flex" tabindex="0">
+          <button type="submit" class="hero__btn" tabindex="-1">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
+            </svg>
+          </button>
+          <input type="text" class="hero__input" placeholder="Поиск по сайту">
+        </form>
         </div>
     </nav>
   </header>
   <main class="main">
+    <h1 class="visually-hidden">Blanchard худождественная галерея</h1>
     <section class="hero">
         <div class="container">
           <div class="hero__container">
@@ -104,7 +193,7 @@
       </div>
     </section>
     <section class="galery">
-
+      <div class="dropdown__scroll"></div>
     </section>
   </main>
   <script src="./js/index.js"></script>
