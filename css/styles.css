@@ -53,9 +53,11 @@ a {
 }
 
 .header__top {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #000000;
+  z-index: 100;
 }
 
 .container {
@@ -214,6 +216,7 @@ a {
   position: relative;
   top: -71px;
   padding-top: 71px;
+  width: 100%;
 }
 
 .swiper-wrapper {
