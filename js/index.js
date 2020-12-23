@@ -14,7 +14,6 @@ input.addEventListener('blur', function() {
 });
 
 const mySwiper = new Swiper('.hero', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   speed: 300,
@@ -49,3 +48,10 @@ Array.prototype.forEach.call(
   document.querySelectorAll('.dropdown__list'),
   el => new SimpleBar()
 );
+
+// galery-choise
+
+const element = document.querySelector('#galery__select');
+const choices = new Choices(element, {
+
+})
