@@ -13,13 +13,28 @@ input.addEventListener('blur', function() {
   input.setAttribute('placeholder', 'Поиск по сайту')
 });
 
-const mySwiper = new Swiper('.hero', {
+const heroSwiper = new Swiper('.hero', {
   direction: 'horizontal',
   loop: true,
   speed: 300,
   effect: 'fade',
   autoplay: {
     delay: 5000,
+  },
+
+})
+
+const galerySwiper = new Swiper('.galery__swiper', {
+  direction: 'horizontal',
+  speed: 300,
+  effect: 'fade',
+  spaceBetween: 10,
+  slidesPerView: 3,
+  slidesPerColumnFill: 'column',
+  slidesPerColumn: 1,
+  slidesPerGroup: 2,
+  autoplay: {
+    delay: 1000,
   },
 
 })
@@ -44,14 +59,14 @@ document.addEventListener('click', function(e) {
 
 // simplebar
 
-Array.prototype.forEach.call(
-  document.querySelectorAll('.dropdown__list'),
-  el => new SimpleBar()
-);
+// Array.prototype.forEach.call(
+//   document.querySelectorAll('.dropdown__list'),
+//   el => new SimpleBar()
+// );
 
 // galery-choise
 
-const element = document.querySelector('#galery__select');
-const choices = new Choices(element, {
+const element = document.querySelector('.js-choises');
+const choices = new Choices(element);
 
-})
+

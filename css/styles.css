@@ -79,7 +79,7 @@ a {
 .header__bottom {
   position: relative;
   padding-top: 26px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   font-size: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
@@ -218,7 +218,7 @@ a {
 
 .hero {
   position: relative;
-  top: -71px;
+  top: -70px;
   padding-top: 71px;
   width: 100%;
 }
@@ -364,9 +364,9 @@ a {
 /* ABOUT US */
 
 .about-us {
-  margin-top: -71px;
+  margin-top: -70px;
   padding-top: 85px;
-  padding-bottom: 67px;
+  padding-bottom: 70px;
 }
 
 .about-us__title {
@@ -381,8 +381,12 @@ max-width: 1085px;
 /* Galery */
 
 .galery {
-  padding: 100px 0 80px 0;
+  padding: 85px 0 80px 0;
   background: url('../img/birmingham-museums.jpg') no-repeat;
+}
+
+.section__title-galery {
+  margin-bottom: 28px;
 }
 
 .galery__filter {
@@ -392,11 +396,54 @@ max-width: 1085px;
 }
 
 .galery__field {
+  padding-top: 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   color: var(--white);
+  font-weight: 600;
   border: none;
+}
+
+.galery__input {
+  padding-left: 20px;
+  height: 38px;
+  border: 1px solid #999999;
+  background-color: rgba(0, 0, 0, 0);
 }
 .galery__description {
 }
+
+
+/* Choises */
+
+.choices {
+  margin-bottom: 0;
+  width: 400px;
+}
+
+.choices__list--single {
+  padding: 1px 16px 4px 7px;
+  letter-spacing: 1px;
+}
+.choices__inner {
+  background-color: transparent;
+  border-radius: 6px;
+  min-height: 40px;
+}
+
+.choices__list--dropdown {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+}
+
+.choices[data-type*=select-one] .choices__input {
+  display: none;
+}
+
+.is-selected,
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
