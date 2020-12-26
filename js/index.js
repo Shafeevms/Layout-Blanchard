@@ -25,18 +25,24 @@ const heroSwiper = new Swiper('.hero', {
 })
 
 const galerySwiper = new Swiper('.galery__swiper', {
-  direction: 'horizontal',
-  speed: 300,
-  effect: 'fade',
-  spaceBetween: 10,
+  speed: 1000,
+  height: 900,
   slidesPerView: 3,
-  slidesPerColumnFill: 'column',
-  slidesPerColumn: 1,
-  slidesPerGroup: 2,
+  slidesPerColumn: 2,
+  slidesPerColumnFill: 'row',
+  slidesPerGroup: 1,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: '.galery__swiper-button-next',
+    prevEl: '.galery__swiper-button-prev',
+  },
   autoplay: {
     delay: 1000,
   },
-
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
 })
 
 // dropdown
@@ -59,10 +65,12 @@ document.addEventListener('click', function(e) {
 
 // simplebar
 
-// Array.prototype.forEach.call(
-//   document.querySelectorAll('.dropdown__list'),
-//   el => new SimpleBar()
-// );
+let items = document.querySelectorAll('.dropdown__list');
+
+items.forEach(el => {
+  new SimpleBar(el);
+})
+
 
 // galery-choise
 
