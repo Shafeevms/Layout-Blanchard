@@ -146,7 +146,7 @@ a {
 
 .dropdown {
   position: absolute;
-  top: 42px;
+  top: 41px;
   left: 0;
   padding: 40px;
   width: 0;
@@ -165,9 +165,9 @@ a {
 }
 
 .dropdown__list {
-  padding-right: 0px;
+  padding: 2px;
   width: 241px;
-  height: 250px;
+  height: 230px;
 }
 
 .simplebar-scrollbar::before {
@@ -201,8 +201,9 @@ a {
   transition: all 0.3s ease;
 }
 
-.dropdown__item:hover,
+.dropdown__link:hover,
 .dropdown__link:focus {
+  outline: none;
   outline: 2px solid #9D5CD0;
   cursor: pointer;
 }
@@ -224,7 +225,7 @@ a {
 
 .hero {
   position: relative;
-  top: -70px;
+  margin-top: -70px;
   padding-top: 71px;
   width: 100%;
 }
@@ -370,7 +371,6 @@ a {
 /* ABOUT US */
 
 .about-us {
-  margin-top: -70px;
   padding-top: 85px;
   padding-bottom: 70px;
 }
@@ -384,28 +384,28 @@ line-height: 32px;
 max-width: 1085px;
 }
 
-/* Galery */
+/* gallery */
 
-.galery {
+.gallery {
   padding: 85px 0 80px 0;
   background: url('../img/birmingham-museums.jpg') no-repeat;
 }
 
-.galery__container {
+.gallery__container {
   display: flex;
 }
-.section__title-galery {
+.section__title-gallery {
   margin-bottom: 28px;
 }
 
-.galery__filter {
+.gallery__filter {
   margin-right: 50px;
   display: flex;
   flex-direction: column;
   flex-basis: 400px;
 }
 
-.galery__field {
+.gallery__field {
   padding-top: 18px;
   display: flex;
   flex-direction: column;
@@ -415,48 +415,49 @@ max-width: 1085px;
   border: none;
 }
 
-.galery__input {
+.gallery__input {
   padding-left: 20px;
   height: 38px;
   border: 1px solid #999999;
   background-color: rgba(0, 0, 0, 0);
 }
-.galery__description {
+.gallery__description {
   margin-top: auto;
   line-height: 32px;
-  max-width: 325px;
+  max-width: 350px;
+  font-weight: 600;
 }
 
-.galery__swiper {
+.gallery__swiper {
   position: relative;
   width: 1500px;
   height: 860px;
   overflow-x: hidden;
 }
 
-.galery__link {
+.gallery__link {
   color: #c283f3;
 }
 
-.galery__swiper-wrapper {
+.gallery__swiper-wrapper {
   top: 80px;
   height: 350px;
 }
 
-.galery__swiper-pagination {
+.gallery__swiper-pagination {
   top: 27px;
   left: 52px;
   text-align: start;
   color: var(--white);
 
 }
-.galery__slider-img {
+.gallery__slider-img {
   width: 350px;
   height: 350px;
 }
 
-.galery__swiper-button-prev,
-.galery__swiper-button-next {
+.gallery__swiper-button-prev,
+.gallery__swiper-button-next {
   display: inline-block;
   position: absolute;
   top: 20px;
@@ -464,12 +465,12 @@ max-width: 1085px;
   height: 30px;
 }
 
-.galery__swiper-button-prev {
+.gallery__swiper-button-prev {
   left: 0;
   background: url('../img/icons/pagination-left.svg') no-repeat;
 }
 
-.galery__swiper-button-next {
+.gallery__swiper-button-next {
   left: 100px;
   background: url('../img/icons/pagination-right.svg') no-repeat;
 }

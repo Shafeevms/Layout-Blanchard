@@ -24,7 +24,7 @@ const heroSwiper = new Swiper('.hero', {
 
 })
 
-const galerySwiper = new Swiper('.galery__swiper', {
+const gallerySwiper = new Swiper('.gallery__swiper', {
   speed: 1000,
   height: 900,
   slidesPerView: 3,
@@ -33,12 +33,12 @@ const galerySwiper = new Swiper('.galery__swiper', {
   slidesPerGroup: 1,
   spaceBetween: 50,
   navigation: {
-    nextEl: '.galery__swiper-button-next',
-    prevEl: '.galery__swiper-button-prev',
+    nextEl: '.gallery__swiper-button-next',
+    prevEl: '.gallery__swiper-button-prev',
   },
-  autoplay: {
-    delay: 1000,
-  },
+  // autoplay: {
+  //   delay: 1000,
+  // },
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -72,7 +72,7 @@ items.forEach(el => {
 })
 
 
-// galery-choise
+// gallery-choise
 
 const element = document.querySelector('.js-choises');
 const choices = new Choices(element);
