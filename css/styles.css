@@ -38,7 +38,7 @@ a {
   color: var(--white);
 }
 
-.section__title {
+.section-title {
   font-weight: 400;
   font-size: 48px;
 }
@@ -189,7 +189,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   color: var(--white);
-  transition: all 0.3s ease;
+  transition: outline 0.3s ease;
 }
 
 .dropdown__link {
@@ -198,12 +198,10 @@ a {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: all 0.3s ease;
 }
 
 .dropdown__link:hover,
 .dropdown__link:focus {
-  outline: none;
   outline: 2px solid #9D5CD0;
   cursor: pointer;
 }
@@ -394,7 +392,7 @@ max-width: 1085px;
 .gallery__container {
   display: flex;
 }
-.section__title-gallery {
+.section-title-gallery {
   margin-bottom: 28px;
 }
 
@@ -463,6 +461,7 @@ max-width: 1085px;
   top: 20px;
   width: 30px;
   height: 30px;
+  z-index: 50;
 }
 
 .gallery__swiper-button-prev {
