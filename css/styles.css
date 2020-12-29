@@ -501,7 +501,7 @@ max-width: 1085px;
   opacity: 1;
 }
 
-.gallery__swiper-slide:active.gallery__swiper-slide::before {
+.gallery__swiper-slide:active.gallery__15swiper-slide::before {
   opacity: 0.4;
 }
 
