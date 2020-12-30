@@ -170,9 +170,9 @@ a {
   height: 230px;
 }
 
+
 .simplebar-scrollbar::before {
   left: 0;
-  height: 40px;
   width: 2px;
   background-color: #9D5CD0;
   z-index: 10;
@@ -341,23 +341,21 @@ a {
   display: inline-block;
   font-family: 'Open Sans';
   font-weight: 700;
-  padding: 25px 35px;
+  padding: 22px 32px;
   font-size: 18px;
   background-color: var(--violet);
   color: var(--white);
-  border: none;
+  border: 3px solid var(--violet);
   border-radius: 40px;
-  transition: border-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hero__button:focus {
-  margin: -3px;
   border: 3px solid #7943A4;
   outline: none;
 }
 
 .hero__button:hover {
-  margin: -3px;
   border: 3px solid #D1A9F0;
   outline: none;
 }
@@ -385,8 +383,9 @@ max-width: 1085px;
 /* gallery */
 
 .gallery {
-  padding: 85px 0 80px 0;
+  padding: 85px 0 53px 0;
   background: url('../img/birmingham-museums.jpg') no-repeat;
+  background-size: cover;
 }
 
 .gallery__container {
@@ -501,7 +500,7 @@ max-width: 1085px;
   opacity: 1;
 }
 
-.gallery__swiper-slide:active.gallery__15swiper-slide::before {
+.gallery__swiper-slide:active.gallery__swiper-slide::before {
   opacity: 0.4;
 }
 
@@ -509,7 +508,7 @@ max-width: 1085px;
 .gallery__swiper-button-next {
   display: inline-block;
   position: absolute;
-  top: 20px;
+  top: 22px;
   width: 28px;
   height: 28px;
   color: #666666;
@@ -548,22 +547,30 @@ max-width: 1085px;
 }
 
 .gallery__swiper-button-prev {
-  left: 0;
+  left: 3px;
 }
 
 .gallery__swiper-button-next {
-  left: 100px;
+  left: 103px;
 }
 
 /* Choises */
 
 .choices {
+  opacity: 0.5;
   margin-bottom: 0;
   width: 400px;
 }
 
+.choices__list--dropdown .choices__item {
+  padding-left: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  border: none;
+}
+
 .choices__list--single {
-  padding: 1px 16px 4px 7px;
+  padding: 3px 16px 4px 7px;
   letter-spacing: 1px;
 }
 .choices__inner {
@@ -572,18 +579,40 @@ max-width: 1085px;
   min-height: 40px;
 }
 
+.choices__placeholder {
+  opacity: 1;
+}
+
 .choices__list--dropdown {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 6px;
+}
+
+.choices__list--dropdown .choices__item {
+  border: 1px solid;
 }
 
 .choices[data-type*=select-one] .choices__input {
   display: none;
 }
 
-.is-selected,
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
+.is-selected {
+  display: none;
+}
+.choices__list--single::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  top: 16px;
+  right: 11px;
+  width: 15px;
+  height: 10px;
+  background-color: black;
+  background-image: url('../img/icons/dropdown-ar.svg');
+  background-repeat: no-repeat;
+  z-index: 1;
+}
