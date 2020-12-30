@@ -615,4 +615,9 @@ max-width: 1085px;
   background-image: url('../img/icons/dropdown-ar.svg');
   background-repeat: no-repeat;
   z-index: 1;
+  /* transition: transform; */
+}
+
+.is-open .choices__list--single::after {
+  transform: rotate(180deg) translateX(2px);
 }
