@@ -235,7 +235,7 @@ a {
 
 
 .hero__slide-img {
-  height: 700px;
+  height: 702px;
   width: 100%;
   object-fit: cover;
 }
@@ -368,7 +368,7 @@ a {
 
 .about-us {
   padding-top: 85px;
-  padding-bottom: 70px;
+  padding-bottom: 72px;
 }
 
 .about-us__title {
@@ -383,7 +383,7 @@ max-width: 1085px;
 /* gallery */
 
 .gallery {
-  padding: 85px 0 53px 0;
+  padding: 85px 0 50px 0;
   background: url('../img/birmingham-museums.jpg') no-repeat;
   background-size: cover;
 }
@@ -399,7 +399,7 @@ max-width: 1085px;
   margin-right: 50px;
   display: flex;
   flex-direction: column;
-  flex-basis: 400px;
+  /* flex-basis: 400px; */
 }
 
 .gallery__form {
@@ -423,6 +423,7 @@ max-width: 1085px;
   background-color: rgba(0, 0, 0, 0);
 }
 .gallery__description {
+  transform: translateY(-20px);
   line-height: 32px;
   max-width: 350px;
   font-weight: 600;
