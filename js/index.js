@@ -77,4 +77,61 @@ items.forEach(el => {
 const element = document.querySelector('.js-choises');
 const choices = new Choices(element);
 
+// gallery modal window
+
+const modalAPI = [
+  {
+    id: 1,
+    url: 'Rectangle93.jpg',
+    artistName: 'Казимир Малевич',
+    stateOfArt: 'Женщина с граблями',
+    years: '1931-1932',
+    description: 'Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.',
+  },
+];
+
+const modalTemplate = (data) => {
+ if (data.length === 0) {
+  return `
+          <img src="./img/modal/wrong.png" alt="" class="modal__img">
+          <article class="modal__article article">
+            <h2 class="article__artist reset">Что-то пошло не так...</h2>
+            </article>
+            <button class="modal__btn"></button>
+  `
+
+  } else {
+    const [ { url, artistName, stateOfArt, years, description } ] = data;
+    return `
+              <img src="./img/modal/${url}" alt="${artistName} ${stateOfArt}" class="modal__img">
+              <article class="modal__article article">
+                <h2 class="article__artist reset">${artistName}</h2>
+                <h3 class="article__name reset">“${stateOfArt}”</h3>
+                <h4 class="article__years reset">${years}</h4>
+                <p class="article__description reset">
+                ${description}
+                </p>
+              </article>
+              <button class="modal__btn"></button>
+
+    `
+
+  }
+}
+const render = (string, selector) => {
+  document.querySelector(selector).innerHTML = string;
+}
+
+document.querySelector('.gallery__swiper').addEventListener('click', function(e) {
+  // const parent = e.target.closest('.modal')
+  if (e.target.classList.contains('gallery__swiper-slide')) {
+    const data = [...modalAPI].filter(el => el.id === +e.target.dataset.id);
+    render(modalTemplate(data), '.modal');
+    document.querySelector('.modal').classList.add('modal-visible');
+  } else if (e.target.classList.contains('modal__btn')){
+    document.querySelector('.modal').classList.remove('modal-visible');
+  }
+
+})
+
 

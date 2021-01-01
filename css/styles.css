@@ -295,6 +295,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -347,6 +348,7 @@ a {
   color: var(--white);
   border: 3px solid var(--violet);
   border-radius: 40px;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -383,6 +385,7 @@ max-width: 1085px;
 /* gallery */
 
 .gallery {
+  position: relative;
   padding: 85px 0 50px 0;
   background: url('../img/birmingham-museums.jpg') no-repeat;
   background-size: cover;
@@ -453,9 +456,12 @@ max-width: 1085px;
 }
 
 .gallery__swiper-pagination {
-  top: 27px;
-  left: 52px;
-  text-align: start;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: auto;
+  text-align: center;
   color: var(--white);
   z-index: 1;
 }
@@ -504,18 +510,31 @@ max-width: 1085px;
 .gallery__swiper-slide:active.gallery__swiper-slide::before {
   opacity: 0.4;
 }
+.gallery__navigation {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+  min-width: 150px;
+  transform: translate(4px, -330px);
+  z-index: 10;
+}
 
 .gallery__swiper-button-prev,
 .gallery__swiper-button-next {
   display: inline-block;
-  position: absolute;
+  /* position: absolute;
   top: 22px;
   width: 28px;
-  height: 28px;
+  height: 28px; */
   color: #666666;
   z-index: 50;
   outline: none;
   transition: color 0.3s ease;
+}
+
+.gallery__swiper-button-prev {
+  margin-right: 17px;
 }
 
 /* gallery svg */
@@ -540,6 +559,7 @@ max-width: 1085px;
 .gallery__swiper-button-next:hover .round {
   fill: #9D5CD0;
   color: #9D5CD0;
+  cursor: pointer;
 }
 
 .gallery__swiper-button-prev:active .round,
@@ -547,13 +567,13 @@ max-width: 1085px;
   fill: #7943A4;
 }
 
-.gallery__swiper-button-prev {
+/* .gallery__swiper-button-prev {
   left: 3px;
 }
 
 .gallery__swiper-button-next {
   left: 103px;
-}
+} */
 
 /* Choises */
 
@@ -621,4 +641,68 @@ max-width: 1085px;
 
 .is-open .choices__list--single::after {
   transform: rotate(180deg) translateX(2px);
+}
+
+/* gallery modal window */
+
+.modal {
+  display: flex;
+  position: absolute;
+  top: 198px;
+  left: -9999px;
+  width: 900px;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.modal-visible {
+  left: 125px;
+  opacity: 1;
+}
+.modal__img {
+  object-fit: cover;
+  width: 400px;
+  height: 500px;
+  background-color: #ccc;
+}
+.modal__article {
+  padding-top: 124px;
+  padding-left: 48px;
+  padding-right: 50px;
+}
+.article {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  color: #333333;
+}
+.article__artist {
+  margin-bottom: 4px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.article__name {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.article__years {
+  margin-bottom: 35px;
+  font-size: 12px;
+  color: #969696;
+}
+.article__description {
+  line-height: 32px;
+}
+.modal__btn {
+  position: absolute;
+  background-color: transparent;
+  background: url('../img/icons/close_btn.svg') no-repeat;
+  top: 20px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
 }
