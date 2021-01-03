@@ -15,6 +15,8 @@
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
   <header class="header">
@@ -270,8 +272,253 @@
         </div>
       </div>
     </section>
+    <section class="catalogue container">
+      <div class="title__wrapper">
+        <h2 class="section-title catalogue__title reset">Каталог</h2>
+        <ul class="catalogue__list flex reset">
+          <li class="catalogue__item"><img src="./img/flags/image_4.png" alt="флаг" class="catalogue__img"></li>
+          <li class="catalogue__item"><img src="./img/flags/image_6.png" alt="флаг" class="catalogue__img"></li>
+          <li class="catalogue__item"><img src="./img/flags/image_7.png" alt="флаг" class="catalogue__img"></li>
+          <li class="catalogue__item"><img src="./img/flags/image_8.png" alt="флаг" class="catalogue__img"></li>
+          <li class="catalogue__item"><img src="./img/flags/image_5.png" alt="флаг" class="catalogue__img"></li>
+        </ul>
+      </div>
+      <p class="catalogue__description reset">
+        Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+      </p>
+      <div class="catalogue__wrapper">
+        <article class="catalogue__article article">
+          <img src="./img/catalogue/image_3.jpg" alt="" class="article__img">
+          <h2 class="article__artist reset">Доменико Гирландайо</h2>
+          <h3 class="article__years reset">2 июня 1448 — 11 января 1494.</h3>
+          <p class="article__description reset">
+            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+          </p>
+        </article>
+        <div id="accordion" class="catalogue__accordion accordion">
+          <button class="accordion__btn">
+            C 1400 по 1499 гг.
+          </button>
+          <div class="accprdion__content content">
+            <ul class="content__list">
+              <li class="content__item"><a href="#" class="content__link">Бенедетто ди Биндо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бергоньоне, Амброджо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Биссоло, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Больтраффио, Джованни</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бонсиньори, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Боттичини, Рафаэлло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Брамантино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бреа, Людовико</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бьяджо д’Антонио Туччи</a></li>
+              <li class="content__item"><a href="#" class="content__link">Веккьетта</a></li>
+              <li class="content__item"><a href="#" class="content__link">Андреа Верроккьо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Доменико Гирландайо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Беноццо Гоццоли</a></li>
+              <li class="content__item"><a href="#" class="content__link">Граначчи, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Грегорио ди Чекко</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни да Удине</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни ди Паоло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джорджоне</a></li>
+              <li class="content__item"><a href="#" class="content__link">Парентино, Бернардо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пезеллино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пьетро Перуджино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Перуцци, Бальдассаре</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пизанелло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пинтуриккьо</a></li>
+            </ul>
+          </div>
+          <button class="accordion__btn">
+            C 1500 по 1599 гг.
+          </button>
+          <div class="accprdion__content content">
+            <ul class="content__list">
+              <li class="content__item"><a href="#" class="content__link">Бенедетто ди Биндо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бергоньоне, Амброджо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Биссоло, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Больтраффио, Джованни</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бонсиньори, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Боттичини, Рафаэлло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Брамантино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бреа, Людовико</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бьяджо д’Антонио Туччи</a></li>
+              <li class="content__item"><a href="#" class="content__link">Веккьетта</a></li>
+              <li class="content__item"><a href="#" class="content__link">Андреа Верроккьо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Доменико Гирландайо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Беноццо Гоццоли</a></li>
+              <li class="content__item"><a href="#" class="content__link">Граначчи, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Грегорио ди Чекко</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни да Удине</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни ди Паоло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джорджоне</a></li>
+              <li class="content__item"><a href="#" class="content__link">Парентино, Бернардо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пезеллино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пьетро Перуджино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Перуцци, Бальдассаре</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пизанелло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пинтуриккьо</a></li>
+            </ul>
+          </div>
+          <button class="accordion__btn">
+            C 1600 по 1699 гг.
+          </button>
+          <div class="accprdion__content content">
+            <ul class="content__list">
+              <li class="content__item"><a href="#" class="content__link">Бенедетто ди Биндо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бергоньоне, Амброджо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Биссоло, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Больтраффио, Джованни</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бонсиньори, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Боттичини, Рафаэлло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Брамантино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бреа, Людовико</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бьяджо д’Антонио Туччи</a></li>
+              <li class="content__item"><a href="#" class="content__link">Веккьетта</a></li>
+              <li class="content__item"><a href="#" class="content__link">Андреа Верроккьо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Доменико Гирландайо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Беноццо Гоццоли</a></li>
+              <li class="content__item"><a href="#" class="content__link">Граначчи, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Грегорио ди Чекко</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни да Удине</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни ди Паоло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джорджоне</a></li>
+              <li class="content__item"><a href="#" class="content__link">Парентино, Бернардо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пезеллино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пьетро Перуджино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Перуцци, Бальдассаре</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пизанелло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пинтуриккьо</a></li>
+            </ul>
+          </div>
+          <button class="accordion__btn">
+            C 1700 по 1799 гг.
+          </button>
+          <div class="accprdion__content content">
+            <ul class="content__list">
+              <li class="content__item"><a href="#" class="content__link">Бенедетто ди Биндо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бергоньоне, Амброджо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Биссоло, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Больтраффио, Джованни</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бонсиньори, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Боттичини, Рафаэлло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Брамантино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бреа, Людовико</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бьяджо д’Антонио Туччи</a></li>
+              <li class="content__item"><a href="#" class="content__link">Веккьетта</a></li>
+              <li class="content__item"><a href="#" class="content__link">Андреа Верроккьо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Доменико Гирландайо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Беноццо Гоццоли</a></li>
+              <li class="content__item"><a href="#" class="content__link">Граначчи, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Грегорио ди Чекко</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни да Удине</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни ди Паоло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джорджоне</a></li>
+              <li class="content__item"><a href="#" class="content__link">Парентино, Бернардо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пезеллино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пьетро Перуджино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Перуцци, Бальдассаре</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пизанелло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пинтуриккьо</a></li>
+            </ul>
+          </div>
+          <button class="accordion__btn">
+            C 1800 по 1899 гг.
+          </button>
+          <div class="accprdion__content content">
+            <ul class="content__list">
+              <li class="content__item"><a href="#" class="content__link">Бенедетто ди Биндо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бергоньоне, Амброджо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Биссоло, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Больтраффио, Джованни</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бонсиньори, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Боттичини, Рафаэлло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Брамантино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бреа, Людовико</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бьяджо д’Антонио Туччи</a></li>
+              <li class="content__item"><a href="#" class="content__link">Веккьетта</a></li>
+              <li class="content__item"><a href="#" class="content__link">Андреа Верроккьо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Доменико Гирландайо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Беноццо Гоццоли</a></li>
+              <li class="content__item"><a href="#" class="content__link">Граначчи, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Грегорио ди Чекко</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни да Удине</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни ди Паоло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джорджоне</a></li>
+              <li class="content__item"><a href="#" class="content__link">Парентино, Бернардо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пезеллино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пьетро Перуджино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Перуцци, Бальдассаре</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пизанелло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пинтуриккьо</a></li>
+            </ul>
+          </div>
+          <button class="accordion__btn">
+            C 1900 по 1999 гг.
+          </button>
+          <div class="accprdion__content content">
+            <ul class="content__list">
+              <li class="content__item"><a href="#" class="content__link">Бенедетто ди Биндо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бергоньоне, Амброджо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Биссоло, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Больтраффио, Джованни</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бонсиньори, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Боттичини, Рафаэлло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Брамантино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бреа, Людовико</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бьяджо д’Антонио Туччи</a></li>
+              <li class="content__item"><a href="#" class="content__link">Веккьетта</a></li>
+              <li class="content__item"><a href="#" class="content__link">Андреа Верроккьо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Доменико Гирландайо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Беноццо Гоццоли</a></li>
+              <li class="content__item"><a href="#" class="content__link">Граначчи, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Грегорио ди Чекко</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни да Удине</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни ди Паоло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джорджоне</a></li>
+              <li class="content__item"><a href="#" class="content__link">Парентино, Бернардо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пезеллино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пьетро Перуджино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Перуцци, Бальдассаре</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пизанелло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пинтуриккьо</a></li>
+            </ul>
+          </div>
+          <button class="accordion__btn">
+            C 2000 г.
+          </button>
+          <div class="accprdion__content content">
+            <ul class="content__list">
+              <li class="content__item"><a href="#" class="content__link">Бенедетто ди Биндо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бергоньоне, Амброджо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Биссоло, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Больтраффио, Джованни</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бонсиньори, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Боттичини, Рафаэлло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Брамантино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бреа, Людовико</a></li>
+              <li class="content__item"><a href="#" class="content__link">Бьяджо д’Антонио Туччи</a></li>
+              <li class="content__item"><a href="#" class="content__link">Веккьетта</a></li>
+              <li class="content__item"><a href="#" class="content__link">Андреа Верроккьо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Доменико Гирландайо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Беноццо Гоццоли</a></li>
+              <li class="content__item"><a href="#" class="content__link">Граначчи, Франческо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Грегорио ди Чекко</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни да Удине</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джованни ди Паоло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Джорджоне</a></li>
+              <li class="content__item"><a href="#" class="content__link">Парентино, Бернардо</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пезеллино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пьетро Перуджино</a></li>
+              <li class="content__item"><a href="#" class="content__link">Перуцци, Бальдассаре</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пизанелло</a></li>
+              <li class="content__item"><a href="#" class="content__link">Пинтуриккьо</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="./js/index.js"></script>
+
 </body>
 </html>

@@ -122,16 +122,26 @@ const render = (string, selector) => {
   document.querySelector(selector).innerHTML = string;
 }
 
-document.querySelector('.gallery__swiper').addEventListener('click', function(e) {
-  // const parent = e.target.closest('.modal')
-  if (e.target.classList.contains('gallery__swiper-slide')) {
-    const data = [...modalAPI].filter(el => el.id === +e.target.dataset.id);
-    render(modalTemplate(data), '.modal');
-    document.querySelector('.modal').classList.add('modal-visible');
-  } else if (e.target.classList.contains('modal__btn')){
-    document.querySelector('.modal').classList.remove('modal-visible');
+const openModal = e => {
+  let centerCoords = {
+    top: `${document.documentElement.clientHeight / 2 - 250}px`,
+    left: `${document.documentElement.clientWidth / 2 - 450}px`
   }
+    if (e.target.classList.contains('gallery__swiper-slide')) {
+      const data = [...modalAPI].filter(el => el.id === +e.target.dataset.id);
+      render(modalTemplate(data), '.modal');
+      document.querySelector('.modal').classList.add('modal-visible');
+      document.querySelector('.modal').style.top = centerCoords.top;
+      document.querySelector('.modal-visible').style.left = centerCoords.left;
+    } else if (e.target.classList.contains('modal__btn')){
+      document.querySelector('.modal').classList.remove('modal-visible');
+      document.querySelector('.modal').style.top = "-9999px";
+    }
 
-})
+}
+document.querySelector('.gallery__swiper').addEventListener('click', openModal)
 
 
+// accordion
+
+$( "#accordion" ).accordion();
