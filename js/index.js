@@ -90,37 +90,37 @@ const modalAPI = [
   },
 ];
 
-const modalTemplate = (data) => {
+const modalWrong = `
+<img src="./img/modal/wrong.png" alt="" class="modal__img">
+<article class="modal__article article">
+  <h2 class="article__artist reset">Что-то пошло не так...</h2>
+  </article>
+  <button class="modal__btn"></button>
+`
+
+
+const modalTemplate = (data, wrongTemp) => {
  if (data.length === 0) {
-  return `
-          <img src="./img/modal/wrong.png" alt="" class="modal__img">
-          <article class="modal__article article">
-            <h2 class="article__artist reset">Что-то пошло не так...</h2>
-            </article>
-            <button class="modal__btn"></button>
-  `
+  return wrongTemp;
 
   } else {
     const [ { url, artistName, stateOfArt, years, description } ] = data;
     return `
-              <img src="./img/modal/${url}" alt="${artistName} ${stateOfArt}" class="modal__img">
-              <article class="modal__article article">
-                <h2 class="article__artist reset">${artistName}</h2>
-                <h3 class="article__name reset">“${stateOfArt}”</h3>
-                <h4 class="article__years reset">${years}</h4>
-                <p class="article__description reset">
-                ${description}
-                </p>
-              </article>
-              <button class="modal__btn"></button>
+    <img src="./img/modal/${url}" alt="${artistName} ${stateOfArt}" class="modal__img">
+    <article class="modal__article article">
+      <h2 class="article__artist reset">${artistName}</h2>
+      <h3 class="article__name reset">“${stateOfArt}”</h3>
+      <h4 class="article__years reset">${years}</h4>
+      <p class="article__description reset">
+      ${description}
+      </p>
+    </article>
+    <button class="modal__btn"></button>
 
-    `
-
+    `;
   }
 }
-const render = (string, selector) => {
-  document.querySelector(selector).innerHTML = string;
-}
+$( "#accordion" ).accordion();
 
 const openModal = e => {
   let centerCoords = {
@@ -129,7 +129,7 @@ const openModal = e => {
   }
     if (e.target.classList.contains('gallery__swiper-slide')) {
       const data = [...modalAPI].filter(el => el.id === +e.target.dataset.id);
-      render(modalTemplate(data), '.modal');
+      render(modalTemplate(data, modalWrong), '.modal');
       document.querySelector('.modal').classList.add('modal-visible');
       document.querySelector('.modal').style.top = centerCoords.top;
       document.querySelector('.modal-visible').style.left = centerCoords.left;
@@ -142,6 +142,3 @@ const openModal = e => {
 document.querySelector('.gallery__swiper').addEventListener('click', openModal)
 
 
-// accordion
-
-$( "#accordion" ).accordion();
