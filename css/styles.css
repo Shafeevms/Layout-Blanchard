@@ -749,6 +749,10 @@ max-width: 1085px;
   border: 2px solid #9d5cd0;
 }
 
+.catalogue__item-checked {
+  border: 2px solid #9d5cd0;
+}
+
 .catalogue__item:not(:last-child) {
   margin-right: 30px;
 }

@@ -840,7 +840,7 @@ const catalogueTemplate = (data) => {
       <li class="catalogue__item"><img src="./img/flags/image_4.png" alt="флаг" data-lg="storeFR" class="catalogue__img"></li>
       <li class="catalogue__item"><img src="./img/flags/image_6.png" alt="флаг" data-lg="storeDE" class="catalogue__img"></li>
       <li class="catalogue__item"><img src="./img/flags/image_7.png" alt="флаг" data-lg="storeIT" class="catalogue__img"></li>
-      <li class="catalogue__item"><img src="./img/flags/image_8.png" alt="флаг" data-lg="storeRU" class="catalogue__img"></li>
+      <li class="catalogue__item catalogue__item-checked"><img src="./img/flags/image_8.png" alt="флаг" data-lg="storeRU" class="catalogue__img"></li>
       <li class="catalogue__item"><img src="./img/flags/image_5.png" alt="флаг" data-lg="storeBG" class="catalogue__img"></li>
     </ul>
   </div>
@@ -899,8 +899,13 @@ document.querySelector('.catalogue').addEventListener('click', function(e) {
           pageData = storeRU;
         break;
     }
-
     render(catalogueTemplate(pageData), '.catalogue')
+    document.querySelectorAll('.catalogue__item').forEach(item => {
+      item.classList.remove('catalogue__item-checked')
+    });
+    e.target.closest('.catalogue__item').classList.add('catalogue__item-checked');
+    console.log(e.target.closest('.catalogue__item'), e.target.closest('.catalogue__item').classList)
+
     $( "#accordion" ).accordion();
   }
 })
@@ -947,9 +952,3 @@ render(catalogueTemplate(storeRU), '.catalogue')
 $( "#accordion" ).accordion();
 
 
-{/* <img src="./img/catalogue/${data.accordionAPI[0].uri}" alt="${data.accordionAPI[0].artistName}" class="article__img">
-      <h2 class="article__artist reset">${data.accordionAPI[0].artistName}</h2>
-      <h3 class="article__years reset">${data.accordionAPI[0].years}</h3>
-      <p class="article__description reset">
-      ${data.accordionAPI[0].description}
-      </p> */}
