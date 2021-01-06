@@ -879,8 +879,9 @@ const accordionItem = data => {
 const render = (string, selector) => {
   document.querySelector(selector).innerHTML = string;
 }
-
+let lg = '';
 document.querySelector('.catalogue').addEventListener('click', function(e) {
+  lg = e.target.dataset.lg;
   if (e.target.classList.contains('catalogue__img')) {
     switch(e.target.dataset.lg) {
       case 'storeFR':
@@ -899,13 +900,11 @@ document.querySelector('.catalogue').addEventListener('click', function(e) {
           pageData = storeRU;
         break;
     }
-    render(catalogueTemplate(pageData), '.catalogue')
+    render(catalogueTemplate(pageData), '.catalogue');
     document.querySelectorAll('.catalogue__item').forEach(item => {
-      item.classList.remove('catalogue__item-checked')
-    });
-    e.target.closest('.catalogue__item').classList.add('catalogue__item-checked');
-    console.log(e.target.closest('.catalogue__item'), e.target.closest('.catalogue__item').classList)
-
+        item.classList.remove('catalogue__item-checked');
+        item.querySelector('.catalogue__img').dataset.lg === lg && item.classList.add('catalogue__item-checked');
+      });
     $( "#accordion" ).accordion();
   }
 })
