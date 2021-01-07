@@ -802,7 +802,7 @@ const accordionList = (data, year) => {
 
 const accordionItem = data => {
   return Object.keys(data.accordion).reduce((acc, date) => {
-    acc += `<button class="accordion__btn">${data.accordion[date].date}</button>
+    acc += `<button class="accordion__btn" tabindex="1"><span class="accordion__year">${data.accordion[date].date}</span></button>
     <div class="accordion__content content">${accordionList(data, date)}</div>`
     return acc;
   }, '');

@@ -142,3 +142,10 @@ const openModal = e => {
 document.querySelector('.gallery__swiper').addEventListener('click', openModal)
 
 
+// EVENTS
+
+document.querySelector('.events__button').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelectorAll('.cards__item').forEach(item => item.classList.remove('d-none'));
+  this.remove();
+})
