@@ -912,8 +912,11 @@ max-width: 1085px;
   margin-bottom: 10px;
   display: flex;
   align-items: start;
-  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.cards__item:not(:nth-child(3n)) {
+  margin-right: 50px;
 }
 
 .cards__img {
@@ -969,7 +972,7 @@ max-width: 1085px;
   color: #9d5cd0;
   text-align: left;
   border-bottom: 1px solid #9d5cd0;
-  transition: all 0.3s ease;
+  transition: font-weight 0.3s ease;
 }
 
 .cards__link:focus {
@@ -1001,7 +1004,7 @@ max-width: 1085px;
   background-color: #fff;
   border: 2px solid #9d5cd0;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .events__button:focus,
