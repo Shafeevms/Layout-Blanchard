@@ -252,7 +252,7 @@
               <div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery/Rectangle91.jpg" alt="" class="gallery__slider-img"></div>
             </div>
             <div class="gallery__navigation">
-              <div class="gallery__swiper-button-prev">
+              <div class="gallery__swiper-button-prev button-prev">
                 <svg class="gallery__svg" width="30" height="30" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="round" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
                   <path class="line" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="currentColor"/>
@@ -261,7 +261,7 @@
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination gallery__swiper-pagination"></div>
-              <div class="gallery__swiper-button-next">
+              <div class="gallery__swiper-button-next button-next">
                 <svg class="gallery__svg" width="30" height="30" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="round" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666"/>
                   <path class="line" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="currentColor"/>
@@ -582,6 +582,172 @@
       </ul>
       <button class="events__button">Все события</button>
     </section>
+    <section class="publication">
+      <div class="container flex">
+        <aside class="publication__filter">
+          <h2 class="section-title publication__title white reset">Издания</h2>
+          <div class="publication__category category">
+            <h3 class="category__title white reset">Категории</h3>
+            <form class="category__list reset">
+              <input type="checkbox" id="bestseller" class="category__checkbox" >
+              <label for="bestseller" class="category__label" tabindex="1"><span class="label-text">Бестселлеры</span>
+              </label>
+              <input type="checkbox" id="art" class="category__checkbox">
+              <label for="art" class="category__label" tabindex="1"><span class="label-text">Искусство</span>
+              </label>
+              <input type="checkbox" id="architecture" class="category__checkbox">
+              <label for="architecture" class="category__label" tabindex="1"><span class="label-text">Архитектура</span>
+              </label>
+              <input type="checkbox" id="design" class="category__checkbox" checked>
+              <label for="design" class="category__label" tabindex="1"><span class="label-text">Дизайн</span>
+              </label>
+              <input type="checkbox" id="fashion" class="category__checkbox">
+              <label for="fashion" class="category__label" tabindex="1"><span class="label-text">Мода</span>
+              </label>
+              <input type="checkbox" id="kids" class="category__checkbox">
+              <label for="kids" class="category__label" tabindex="1"><span class="label-text">Детям</span>
+              </label>
+              <input type="checkbox" id="fiction" class="category__checkbox">
+              <label for="fiction" class="category__label" tabindex="1"><span class="label-text">Худождественная литература</span>
+              </label>
+              <input type="checkbox" id="publicism" class="category__checkbox">
+              <label for="publicism" class="category__label" tabindex="1"><span class="label-text">Публицистика</span>
+              </label>
+              <input type="checkbox" id="guide" class="category__checkbox">
+              <label for="guide" class="category__label" tabindex="1"><span class="label-text">Путеводители</span>
+              </label>
+              <input type="checkbox" id="philosophy" class="category__checkbox">
+              <label for="philosophy" class="category__label" tabindex="1"><span class="label-text">Философия</span>
+              </label>
+              <input type="checkbox" id="educational" class="category__checkbox">
+              <label for="educational" class="category__label" tabindex="1"><span class="label-text">Учебная литература</span>
+              </label>
+              <input type="checkbox" id="periodical" class="category__checkbox">
+              <label for="periodical" class="category__label" tabindex="1"><span class="label-text">Журналы и газеты</span>
+              </label>
+            </form>
+          </div>
+          <form class="publication__form reset white">
+            <legend class="publication__legend reset">Цена</legend>
+            <fieldset class="publication__fieldset reset">
+              <label for="from" class="publication__form-text">От
+              </label>
+              <input type="number" id="from" class="publication__input" value="50" tabindex="1">
+              <label for="to" class="publication__form-text">до
+              </label>
+              <input type="number" id="to" class="publication__input" value="25000" tabindex="1">
+              <span class="publication__form-text">рублей</span>
+            </fieldset>
+          </form>
+        </aside>
+        <div class="publication__swiper">
+          <div class="publication__navigation">
+            <div class="publication__swiper-button-prev button-prev">
+              <svg class="gallery__svg" width="30" height="30" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="round" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
+                <path class="line" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="currentColor"/>
+                <path d="M16 20L11 15L16 10" stroke="white"/>
+                </svg>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination publication__swiper-pagination"></div>
+            <div class="publication__swiper-button-next button-next">
+              <svg class="gallery__svg" width="30" height="30" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="round" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666"/>
+                <path class="line" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="currentColor"/>
+                <path d="M14 20L19 15L14 10" stroke="white"/>
+                </svg>
+            </div>
+          </div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper publication__swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Искусство цвета</h3>
+                <span class="slide__price">620 руб</span>
+              </div>
+              <h3 class="slide__name reset">Иттен, Ирханнес</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Типографика</h3>
+                <span class="slide__price">2450 руб</span>
+              </div>
+              <h3 class="slide__name reset">Рудер, Эмиль</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Книга про буквы</h3>
+                <span class="slide__price">2200 руб</span>
+              </div>
+              <h3 class="slide__name reset">Гордон, Юрий</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Искусство цвета</h3>
+                <span class="slide__price">620 руб</span>
+              </div>
+              <h3 class="slide__name reset">Иттен, Ирханнес</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Типографика</h3>
+                <span class="slide__price">2450 руб</span>
+              </div>
+              <h3 class="slide__name reset">Рудер, Эмиль</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Книга про буквы</h3>
+                <span class="slide__price">2200 руб</span>
+              </div>
+              <h3 class="slide__name reset">Гордон, Юрий</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Искусство цвета</h3>
+                <span class="slide__price">620 руб</span>
+              </div>
+              <h3 class="slide__name reset">Иттен, Ирханнес</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Типографика</h3>
+                <span class="slide__price">2450 руб</span>
+              </div>
+              <h3 class="slide__name reset">Рудер, Эмиль</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+            <div class="swiper-slide publication__swiper-slide white">
+              <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
+              <div class="slide__wrapper">
+                <h3 class="slide__description reset">Книга про буквы</h3>
+                <span class="slide__price">2200 руб</span>
+              </div>
+              <h3 class="slide__name reset">Гордон, Юрий</h3>
+              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <script src="./js/index.js"></script>
   <script src="./js/catalogue.js"></script>

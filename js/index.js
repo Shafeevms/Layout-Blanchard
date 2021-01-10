@@ -31,7 +31,7 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
   slidesPerColumn: 2,
   slidesPerColumnFill: 'row',
   slidesPerGroup: 1,
-  spaceBetween: 50,
+  spaceBetween: 47,
   navigation: {
     nextEl: '.gallery__swiper-button-next',
     prevEl: '.gallery__swiper-button-prev',
@@ -148,4 +148,28 @@ document.querySelector('.events__button').addEventListener('click', function(e) 
   e.preventDefault();
   document.querySelectorAll('.cards__item').forEach(item => item.classList.remove('d-none'));
   this.remove();
+})
+
+// PUBLICATION
+
+const publicationSwiper = new Swiper('.publication__swiper', {
+  direction: 'horizontal',
+  speed: 1000,
+  height: 900,
+  slidesPerView: 3,
+  // slidesPerColumn: 1,
+  slidesPerColumnFill: 'row',
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: '.publication__swiper-button-next',
+    prevEl: '.publication__swiper-button-prev',
+  },
+  // autoplay: {
+  //   delay: 1000,
+  // },
+  pagination: {
+    el: '.publication__swiper-pagination',
+    type: 'fraction',
+  },
 })
