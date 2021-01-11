@@ -11,12 +11,15 @@
   <link rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/dropdown.css">
+  <link rel="stylesheet" href="./css/projects.css">
 
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
 </head>
 <body>
   <header class="header">
@@ -589,41 +592,41 @@
           <div class="publication__category category">
             <h3 class="category__title white reset">Категории</h3>
             <form class="category__list reset">
-              <input type="checkbox" id="bestseller" class="category__checkbox" >
-              <label for="bestseller" class="category__label" tabindex="1"><span class="label-text">Бестселлеры</span>
+              <input type="checkbox" id="bestseller" tabindex="1" class="category__checkbox" >
+              <label for="bestseller" class="category__label" ><span class="label-text">Бестселлеры</span>
               </label>
-              <input type="checkbox" id="art" class="category__checkbox">
-              <label for="art" class="category__label" tabindex="1"><span class="label-text">Искусство</span>
+              <input type="checkbox" id="art" tabindex="1" class="category__checkbox">
+              <label for="art" class="category__label" ><span class="label-text">Искусство</span>
               </label>
-              <input type="checkbox" id="architecture" class="category__checkbox">
-              <label for="architecture" class="category__label" tabindex="1"><span class="label-text">Архитектура</span>
+              <input type="checkbox" id="architecture" tabindex="1" class="category__checkbox">
+              <label for="architecture" class="category__label" ><span class="label-text">Архитектура</span>
               </label>
-              <input type="checkbox" id="design" class="category__checkbox" checked>
-              <label for="design" class="category__label" tabindex="1"><span class="label-text">Дизайн</span>
+              <input type="checkbox" id="design" tabindex="1" class="category__checkbox" checked>
+              <label for="design" class="category__label" ><span class="label-text">Дизайн</span>
               </label>
-              <input type="checkbox" id="fashion" class="category__checkbox">
-              <label for="fashion" class="category__label" tabindex="1"><span class="label-text">Мода</span>
+              <input type="checkbox" id="fashion" tabindex="1" class="category__checkbox">
+              <label for="fashion" class="category__label" ><span class="label-text">Мода</span>
               </label>
-              <input type="checkbox" id="kids" class="category__checkbox">
-              <label for="kids" class="category__label" tabindex="1"><span class="label-text">Детям</span>
+              <input type="checkbox" id="kids" tabindex="1" class="category__checkbox">
+              <label for="kids" class="category__label" ><span class="label-text">Детям</span>
               </label>
-              <input type="checkbox" id="fiction" class="category__checkbox">
-              <label for="fiction" class="category__label" tabindex="1"><span class="label-text">Худождественная литература</span>
+              <input type="checkbox" id="fiction" tabindex="1" class="category__checkbox">
+              <label for="fiction" class="category__label" ><span class="label-text">Худождественная литература</span>
               </label>
-              <input type="checkbox" id="publicism" class="category__checkbox">
-              <label for="publicism" class="category__label" tabindex="1"><span class="label-text">Публицистика</span>
+              <input type="checkbox" id="publicism" tabindex="1" class="category__checkbox">
+              <label for="publicism" class="category__label" ><span class="label-text">Публицистика</span>
               </label>
-              <input type="checkbox" id="guide" class="category__checkbox">
-              <label for="guide" class="category__label" tabindex="1"><span class="label-text">Путеводители</span>
+              <input type="checkbox" id="guide" tabindex="1" class="category__checkbox">
+              <label for="guide" class="category__label" ><span class="label-text">Путеводители</span>
               </label>
-              <input type="checkbox" id="philosophy" class="category__checkbox">
-              <label for="philosophy" class="category__label" tabindex="1"><span class="label-text">Философия</span>
+              <input type="checkbox" id="philosophy" tabindex="1" class="category__checkbox">
+              <label for="philosophy" class="category__label" ><span class="label-text">Философия</span>
               </label>
-              <input type="checkbox" id="educational" class="category__checkbox">
-              <label for="educational" class="category__label" tabindex="1"><span class="label-text">Учебная литература</span>
+              <input type="checkbox" id="educational" tabindex="1" class="category__checkbox">
+              <label for="educational" class="category__label" ><span class="label-text">Учебная литература</span>
               </label>
-              <input type="checkbox" id="periodical" class="category__checkbox">
-              <label for="periodical" class="category__label" tabindex="1"><span class="label-text">Журналы и газеты</span>
+              <input type="checkbox" id="periodical" tabindex="1" class="category__checkbox">
+              <label for="periodical" class="category__label" ><span class="label-text">Журналы и газеты</span>
               </label>
             </form>
           </div>
@@ -744,6 +747,26 @@
               <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects container">
+      <h2 class="section-title reset">Проекты</h2>
+      <p class="projects__description reset">
+        Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <button id="tooltip-1" class="tooltip"></button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button id="tooltip-2" class="tooltip"></button> исключительно в разрезе маркетинговых и финансовых <button id="tooltip-3" class="tooltip"></button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects__link">blanchard-art.ru/projects/about</a>
+      </p>
+      <h3 class="projects__title">Партнеры проектов:</h3>
+      <div class="projects__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide projects__slide p1"><div class="slide__content"></div></div>
+          <div class="swiper-slide projects__slide p2"><div class="slide__content"></div></div>
+          <div class="swiper-slide projects__slide p3"><div class="slide__content"></div></div>
+          <div class="swiper-slide projects__slide p4"><div class="slide__content"></div></div>
+          <div class="swiper-slide projects__slide p5"><div class="slide__content"></div></div>
+          <div class="swiper-slide projects__slide p6"><div class="slide__content"></div></div>
+          <div class="swiper-slide projects__slide p7"><div class="slide__content"></div></div>
+          <div class="swiper-slide projects__slide p8"><div class="slide__content"></div></div>
+          <div class="swiper-slide projects__slide p9"><div class="slide__content"></div></div>
         </div>
       </div>
     </section>

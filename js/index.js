@@ -173,3 +173,36 @@ const publicationSwiper = new Swiper('.publication__swiper', {
     type: 'fraction',
   },
 })
+
+// TOOLTIPS
+
+tippy('#tooltip-1', {
+  content: "Пример современных тенденций - современная методология разработки",
+});
+
+tippy('#tooltip-2', {
+  content: "Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции",
+});
+
+tippy('#tooltip-3', {
+  content: "В стремлении повысить качество ",
+});
+
+const projectSwiper = new Swiper('.projects__swiper', {
+  direction: 'horizontal',
+  speed: 1000,
+  // height: 900,
+  slidesPerView: 3,
+  slidesPerColumnFill: 'row',
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: '.publication__swiper-button-next',
+    prevEl: '.publication__swiper-button-prev',
+  },
+
+  // pagination: {
+  //   el: '.publication__swiper-pagination',
+  //   // type: 'fraction',
+  // },
+})
