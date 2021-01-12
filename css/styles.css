@@ -395,7 +395,7 @@ max-width: 1085px;
 
 .gallery {
   position: relative;
-  padding: 85px 0 50px 0;
+  padding: 85px 0 51px 0;
   background: url('../img/birmingham-museums.jpg') no-repeat;
   background-size: cover;
 }
@@ -405,7 +405,7 @@ max-width: 1085px;
 }
 
 .section-title-gallery {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .gallery__filter {
@@ -897,7 +897,7 @@ max-width: 1085px;
 
 .events {
   padding-top: 63px;
-  padding-bottom: 80px;
+  padding-bottom: 79px;
 }
 
 .section-title {
@@ -1043,9 +1043,6 @@ max-width: 1085px;
   margin-bottom: 41px;
 }
 
-.category {
-}
-
 .category__title {
   margin-bottom: 7px;
   font-size: 16px;
@@ -1107,8 +1104,6 @@ max-width: 1085px;
   background: url('../img/icons/round-active.svg') no-repeat center;
 }
 
-
-
 .category__checkbox:focus + .category__label .label-text {
   border: 2px solid #D1A9F0;
 }
@@ -1118,8 +1113,6 @@ max-width: 1085px;
   outline: none;
 }
 
-.publication__form {
-}
 
 .publication__legend {
   margin-bottom: 17px;
@@ -1155,13 +1148,6 @@ max-width: 1085px;
   position: relative;
   width: 1200px;
   overflow-x: hidden;
-}
-
-.publication__swiper-wrapper {
-
-}
-
-.publication__swiper-slide {
 }
 
 .publication__slider-img {
@@ -1233,17 +1219,17 @@ max-width: 1085px;
 /* PROJECTS */
 
 .projects {
-  padding-top: 80px;
+  padding-top: 86px;
   padding-bottom: 180px;
 }
 
-.section-title {
+.projects__title-main {
   margin-bottom: 20px;
 }
 
 .projects__description {
-  margin-bottom: 25px;
-  max-width: 1080px;
+  margin-bottom: 22px;
+  max-width: 1064px;
   line-height: 32px;
 }
 
@@ -1265,25 +1251,59 @@ max-width: 1085px;
 }
 
 .projects__link {
+  font-weight: 600;
   color: #9d5cd0;
 }
 
+.projects__link:hover {
+  outline: none;
+  text-shadow: 1px 0 0 currentColor;
+}
+
 .projects__title {
+  margin-bottom: 26px;
   font-size: 24px;
   font-weight: 600;
 }
 
 .projects__swiper {
+  margin: 0 auto;
+  position: relative;
   width: 1450px;
   overflow: hidden;
 }
 
 .slide__content {
+  display: block;
   height: 150px;
-}
-
-.projects__slide {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.projects__slide {
+
+}
+
+.b-w {
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+
+.b-w:hover {
+  filter: grayscale(0);
+}
+
+.projects-wrapper {
+  position: relative;
+  justify-content: space-between;
+}
+
+.projects__swiper-button-prev,
+.projects__swiper-button-next {
+  color: #cacaca;
+}
+
+.projects__swiper-button-prev {
+  margin: 0;
 }

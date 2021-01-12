@@ -197,12 +197,8 @@ const projectSwiper = new Swiper('.projects__swiper', {
   slidesPerGroup: 3,
   spaceBetween: 50,
   navigation: {
-    nextEl: '.publication__swiper-button-next',
-    prevEl: '.publication__swiper-button-prev',
+    nextEl: '.projects__swiper-button-next',
+    prevEl: '.projects__swiper-button-prev',
   },
 
-  // pagination: {
-  //   el: '.publication__swiper-pagination',
-  //   // type: 'fraction',
-  // },
 })
