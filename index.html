@@ -20,6 +20,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
   <header class="header">
@@ -583,7 +584,7 @@
           </div>
         </li>
       </ul>
-      <button class="events__button">Все события</button>
+      <button class="events__button btn-white">Все события</button>
     </section>
     <section class="publication">
       <div class="container flex">
@@ -592,40 +593,40 @@
           <div class="publication__category category">
             <h3 class="category__title white reset">Категории</h3>
             <form class="category__list reset">
-              <input type="checkbox" id="bestseller" tabindex="1" class="category__checkbox" >
+              <input type="checkbox" id="bestseller"  class="category__checkbox" >
               <label for="bestseller" class="category__label" ><span class="label-text">Бестселлеры</span>
               </label>
-              <input type="checkbox" id="art" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="art"  class="category__checkbox">
               <label for="art" class="category__label" ><span class="label-text">Искусство</span>
               </label>
-              <input type="checkbox" id="architecture" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="architecture"  class="category__checkbox">
               <label for="architecture" class="category__label" ><span class="label-text">Архитектура</span>
               </label>
-              <input type="checkbox" id="design" tabindex="1" class="category__checkbox" checked>
+              <input type="checkbox" id="design"  class="category__checkbox" checked>
               <label for="design" class="category__label" ><span class="label-text">Дизайн</span>
               </label>
-              <input type="checkbox" id="fashion" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="fashion"  class="category__checkbox">
               <label for="fashion" class="category__label" ><span class="label-text">Мода</span>
               </label>
-              <input type="checkbox" id="kids" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="kids"  class="category__checkbox">
               <label for="kids" class="category__label" ><span class="label-text">Детям</span>
               </label>
-              <input type="checkbox" id="fiction" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="fiction"  class="category__checkbox">
               <label for="fiction" class="category__label" ><span class="label-text">Худождественная литература</span>
               </label>
-              <input type="checkbox" id="publicism" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="publicism"  class="category__checkbox">
               <label for="publicism" class="category__label" ><span class="label-text">Публицистика</span>
               </label>
-              <input type="checkbox" id="guide" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="guide"  class="category__checkbox">
               <label for="guide" class="category__label" ><span class="label-text">Путеводители</span>
               </label>
-              <input type="checkbox" id="philosophy" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="philosophy"  class="category__checkbox">
               <label for="philosophy" class="category__label" ><span class="label-text">Философия</span>
               </label>
-              <input type="checkbox" id="educational" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="educational"  class="category__checkbox">
               <label for="educational" class="category__label" ><span class="label-text">Учебная литература</span>
               </label>
-              <input type="checkbox" id="periodical" tabindex="1" class="category__checkbox">
+              <input type="checkbox" id="periodical"  class="category__checkbox">
               <label for="periodical" class="category__label" ><span class="label-text">Журналы и газеты</span>
               </label>
             </form>
@@ -672,7 +673,7 @@
                 <span class="slide__price">620 руб</span>
               </div>
               <h3 class="slide__name reset">Иттен, Ирханнес</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
@@ -681,7 +682,7 @@
                 <span class="slide__price">2450 руб</span>
               </div>
               <h3 class="slide__name reset">Рудер, Эмиль</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
@@ -690,7 +691,7 @@
                 <span class="slide__price">2200 руб</span>
               </div>
               <h3 class="slide__name reset">Гордон, Юрий</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
@@ -699,7 +700,7 @@
                 <span class="slide__price">620 руб</span>
               </div>
               <h3 class="slide__name reset">Иттен, Ирханнес</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
@@ -708,7 +709,7 @@
                 <span class="slide__price">2450 руб</span>
               </div>
               <h3 class="slide__name reset">Рудер, Эмиль</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
@@ -717,7 +718,7 @@
                 <span class="slide__price">2200 руб</span>
               </div>
               <h3 class="slide__name reset">Гордон, Юрий</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
@@ -726,7 +727,7 @@
                 <span class="slide__price">620 руб</span>
               </div>
               <h3 class="slide__name reset">Иттен, Ирханнес</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
@@ -735,7 +736,7 @@
                 <span class="slide__price">2450 руб</span>
               </div>
               <h3 class="slide__name reset">Рудер, Эмиль</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
@@ -744,7 +745,7 @@
                 <span class="slide__price">2200 руб</span>
               </div>
               <h3 class="slide__name reset">Гордон, Юрий</h3>
-              <button class="slide__btn" tabindex="1"><span class="btn-text">Заказать</span></button>
+              <button class="slide__btn"><span class="btn-text">Заказать</span></button>
             </div>
           </div>
         </div>
@@ -784,6 +785,29 @@
             <path d="M14 20L19 15L14 10" stroke="white"/>
             </svg>
         </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title section-title reset">Контакты</h2>
+      <div class="contacts__wrapper flex">
+        <div class="contacts__us">
+          <div class="contact-card">
+            <h3 class="contact-cart__title reset">Шоурум №4</h3>
+            <address class="contact-card__address">Леонтьевский переулок, дом 5, строение 1</address>
+            <form action="GET" class="contact-card__form">
+              <legend class="contact-card__legend">Заказать обратный звонок</legend>
+              <input type="text" class="contact-card__input" placeholder="Имя*">
+              <input type="tel" class="contact-card__input" placeholder="Телефон*">
+              <button type="submit" class="btn-white contact-card__btn">Заказать</button>
+            </form>
+            <h3 class="contact-card__legend reset">Связаться в один клик</h3>
+            <ul class="contacts__list flex reset">
+              <li class="contacts__item"><a href="#" class="contacts__link"><img src="./img/icons/Whatsapp-Icon.svg" alt="whatsapp" class="contacts__social"></a></li>
+              <li class="contacts__item"><a href="#" class="contacts__link"><img src="./img/icons/TelegramLogo.svg" alt="telegram" class="contacts__social"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="map" style="min-width: 1237px; height: 700px"></div>
       </div>
     </section>
   </main>

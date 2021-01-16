@@ -202,3 +202,29 @@ const projectSwiper = new Swiper('.projects__swiper', {
   },
 
 })
+
+// yandex map
+
+ymaps.ready(init);
+function init(){
+  var myMap = new ymaps.Map("map", {
+    center: [55.76, 37.619],
+    zoom: 15
+  });
+  var myPlacemark = new ymaps.Placemark([55.7571, 37.6005], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../img/icons/map-mark.svg',
+    iconImageSize: [20, 20],
+  });
+  myMap.geoObjects.add(myPlacemark);
+  myMap.controls.remove('fullscreenControl');
+  myMap.controls.remove('rulerControl');
+  myMap.controls.remove('routeEditor');
+  myMap.controls.remove('searchControl');
+  myMap.controls.remove('trafficControl');
+  myMap.controls.remove('typeSelector');
+  myMap.controls.remove('routeButtonControl');
+  myMap.controls.add('geolocationControl');
+
+};
+
