@@ -1109,7 +1109,7 @@ max-width: 1085px;
 }
 
 .category__checkbox:focus + .category__label .label-text {
-  border: 2px solid #D1A9F0;
+  outline: 2px solid #D1A9F0;
 }
 
 .category__checkbox:checked + .category__label {
@@ -1309,27 +1309,40 @@ max-width: 1085px;
 /* CONTACTS */
 
 .contacts {
-  margin: 0 auto;
-  padding-left: 156px;
   padding-bottom: 80px;
+}
+
+.contacts__container {
+  margin: 0 auto;
+  margin-bottom: 21px;
+  padding-left: 156px;
   max-width: 1920px;
 }
 
 .contacts__title {
-  margin-bottom: 21px;
+
 }
 
 .contacts__wrapper {
-  flex-basis: 682px;
+  margin: 0 auto;
+  width: 100%;
+
 }
 
 .contacts__us {
-  padding: 125px 0 73px 3px;
-  width: 526px;
+  padding: 125px 0 73px;
+  flex: 1 1 682px;
   border-top: 1px solid #cacaca;
 }
 
+#map {
+  flex: 1 1 1238px;
+  height: 700px;
+}
+
 .contact-card {
+  margin-right: 122px;
+  margin-left: auto;
   height: 500px;
   max-width: 400px;
 }
@@ -1340,6 +1353,7 @@ max-width: 1085px;
 }
 
 .contact-card__address {
+  font-style: normal;
   margin-bottom: 37px;
 }
 
