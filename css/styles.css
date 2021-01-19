@@ -1329,7 +1329,9 @@ max-width: 1085px;
 }
 
 .contacts__us {
-  padding: 125px 0 73px;
+  padding-top: 125px;
+  padding-bottom: 73px;
+  padding-left: calc((37.4% - 400px) / 2);
   flex: 1 1 682px;
   border-top: 1px solid #cacaca;
 }
@@ -1340,8 +1342,6 @@ max-width: 1085px;
 }
 
 .contact-card {
-  margin-right: 122px;
-  margin-left: auto;
   height: 500px;
   max-width: 400px;
 }
@@ -1381,26 +1381,32 @@ max-width: 1085px;
 
 .contact-card__input:hover.contact-card__input::placeholder {
   color: #7943A4;
+  text-shadow: 1px 0 0 currentColor;
 }
 
 .contact-card__input:hover.contact-card__input:-ms-input-placeholder {
   color: #7943A4;
+  text-shadow: 1px 0 0 currentColor;
 }
 
 .contact-card__input:hover.contact-card__input::-ms-input-placeholder {
   color: #7943A4;
+  text-shadow: 1px 0 0 currentColor;
 }
 
 .contact-card__input:focus.contact-card__input::placeholder {
   color: #7943A4;
+  text-shadow: 1px 0 0 currentColor;
 }
 
 .contact-card__input:focus.contact-card__input:-ms-input-placeholder {
   color: #7943A4;
+  text-shadow: 1px 0 0 currentColor;
 }
 
 .contact-card__input:focus.contact-card__input::-ms-input-placeholder {
   color: #7943A4;
+  text-shadow: 1px 0 0 currentColor;
 }
 
 .contact-card__input:hover {
