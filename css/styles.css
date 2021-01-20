@@ -1331,7 +1331,7 @@ max-width: 1085px;
 .contacts__us {
   padding-top: 125px;
   padding-bottom: 73px;
-  padding-left: calc((37.4% - 400px) / 2);
+  padding-left: calc((100% - 1600px) / 2);
   flex: 1 1 682px;
   border-top: 1px solid #cacaca;
 }
