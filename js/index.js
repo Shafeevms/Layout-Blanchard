@@ -27,18 +27,33 @@ const heroSwiper = new Swiper('.hero', {
 const gallerySwiper = new Swiper('.gallery__swiper', {
   speed: 1000,
   height: 900,
-  slidesPerView: 3,
-  slidesPerColumn: 2,
-  slidesPerColumnFill: 'row',
-  slidesPerGroup: 1,
-  spaceBetween: 47,
+  // slidesPerView: 3,
+  // slidesPerColumn: 2,
+  // slidesPerColumnFill: 'row',
+  // slidesPerGroup: 1,
+  // spaceBetween: 47,
   navigation: {
     nextEl: '.gallery__swiper-button-next',
     prevEl: '.gallery__swiper-button-prev',
   },
-  // autoplay: {
-  //   delay: 1000,
-  // },
+  breakpoints: {
+    1020: {
+      height: 400,
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 35,
+      slidesPerColumnFill: 'row',
+    },
+    1400: {
+      height: 900,
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 47,
+      slidesPerColumnFill: 'row',
+    },
+  },
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',

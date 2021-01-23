@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/dropdown.css">
   <link rel="stylesheet" href="./css/projects.css">
+  <link rel="stylesheet" media="only screen and (max-width: 1919px)" href="./css/styles1920.css">
 
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
@@ -20,13 +21,15 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
 </head>
 <body>
   <header class="header">
     <div class="header__top">
       <div class="container header__container">
+        <svg class="header__burger" xmlns="http://www.w3.org/2000/svg" width="36" height="29" viewbox="0 0 36 29"><g><g><g><path fill="#fff" d="M36 .7H0v3.652h36z"/></g><g><path fill="#fff" d="M28.2 12.874H0v3.652h28.2z"/></g><g><path fill="#fff" d="M24 25.048H0V28.7h24z"/></g></g></g></svg>
         <img src="./img/Лого.svg" alt="логотип" class="header__logo">
+        <img src="./img/logo1024.svg" alt="логотип" class="header__logo-1024">
         <nav class="header__nav">
           <ul class="header__list flex reset">
             <li class="header__item"><a href="#" class="header__link">О&nbsp;нас</a></li>
@@ -43,6 +46,12 @@
             <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"/>
           </svg>
           Войти</a>
+          <button type="submit" class="hero__btn header__btn" tabindex="-1">
+            <svg class="btn-svg" width="23" height="22" viewbox="0 0 23 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="currentColor"/>
+            </svg>
+          </button>
       </div>
     </div>
     <nav class="header__bottom">
@@ -185,7 +194,7 @@
     <section class="hero">
         <div class="container">
           <div class="hero__container">
-            <h2 class="hero__title reset">Прикоснитесь к&nbsp;прекрасному</h2>
+            <h2 class="hero__title  reset">Прикоснитесь к&nbsp;прекрасному</h2>
             <p class="hero__text reset">
               Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
             </p>
@@ -795,7 +804,7 @@
             <h3 class="contact-cart__title reset">Шоурум №4</h3>
             <address class="contact-card__address">Леонтьевский переулок, дом 5, строение 1</address>
             <form action="GET" class="contact-card__form">
-              <legend class="contact-card__legend">Заказать обратный звонок</legend>
+              <h3 class="contact-card__legend">Заказать обратный звонок</h3>
               <input name="name" type="text" class="contact-card__input" placeholder="Имя*">
               <input name="surname" type="tel" class="contact-card__input" placeholder="Телефон*">
               <button type="submit" class="btn-white contact-card__btn">Заказать</button>
