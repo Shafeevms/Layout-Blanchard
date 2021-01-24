@@ -37,7 +37,7 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
     prevEl: '.gallery__swiper-button-prev',
   },
   breakpoints: {
-    1020: {
+    1024: {
       height: 400,
       slidesPerView: 2,
       slidesPerColumn: 2,
@@ -168,14 +168,28 @@ document.querySelector('.events__button').addEventListener('click', function(e) 
 // PUBLICATION
 
 const publicationSwiper = new Swiper('.publication__swiper', {
-  direction: 'horizontal',
-  speed: 1000,
-  height: 900,
-  slidesPerView: 3,
-  // slidesPerColumn: 1,
-  slidesPerColumnFill: 'row',
-  slidesPerGroup: 3,
-  spaceBetween: 50,
+  breakpoints: {
+    1920: {
+      speed: 1000,
+      height: 900,
+      direction: 'horizontal',
+      slidesPerView: 3,
+      // slidesPerColumn: 1,
+      slidesPerColumnFill: 'row',
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+    1024: {
+      speed: 1000,
+      height: 900,
+      direction: 'horizontal',
+      slidesPerView: 2,
+      // slidesPerColumn: 1,
+      slidesPerColumnFill: 'row',
+      slidesPerGroup: 2,
+      spaceBetween: 50,
+    },
+  },
   navigation: {
     nextEl: '.publication__swiper-button-next',
     prevEl: '.publication__swiper-button-prev',
@@ -204,13 +218,24 @@ tippy('#tooltip-3', {
 });
 
 const projectSwiper = new Swiper('.projects__swiper', {
-  direction: 'horizontal',
-  speed: 1000,
-  // height: 900,
-  slidesPerView: 3,
-  slidesPerColumnFill: 'row',
-  slidesPerGroup: 3,
-  spaceBetween: 50,
+ breakpoints: {
+   1920: {
+    direction: 'horizontal',
+    speed: 1000,
+    slidesPerView: 3,
+    slidesPerColumnFill: 'row',
+    slidesPerGroup: 3,
+    spaceBetween: 50,
+   },
+   1024: {
+    direction: 'horizontal',
+    speed: 1000,
+    slidesPerView: 2,
+    slidesPerColumnFill: 'row',
+    slidesPerGroup: 2,
+    spaceBetween: 50,
+   }
+ },
   navigation: {
     nextEl: '.projects__swiper-button-next',
     prevEl: '.projects__swiper-button-prev',
