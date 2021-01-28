@@ -169,7 +169,7 @@ document.querySelector('.events__button').addEventListener('click', function(e) 
 
 const publicationSwiper = new Swiper('.publication__swiper', {
   breakpoints: {
-    1920: {
+    1400: {
       speed: 1000,
       height: 900,
       direction: 'horizontal',

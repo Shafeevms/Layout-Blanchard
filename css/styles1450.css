@@ -1,0 +1,51 @@
+.header__logo {
+  margin-right: 50px;
+}
+
+.hero__item:not(:last-child),
+.header__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.hero__input {
+  width: 170px;
+}
+
+.catalogue__article {
+  max-width: 436px;
+}
+
+.article__img {
+  max-width: 437px;
+}
+
+.events__cards {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 950px;
+}
+
+.cards__item {
+  flex-basis: 290px;
+}
+
+.cards__item:not(:nth-child(3n)) {
+  margin-right: 27px;
+}
+
+.cards__img {
+  width: 290px;
+  height: 200px;
+}
+
+
+
+.cards__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 220px;
+}
+
+

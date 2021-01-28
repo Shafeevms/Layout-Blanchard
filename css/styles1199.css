@@ -1,0 +1,40 @@
+.header__burger {
+  display: block;
+}
+
+.header__btn {
+  display: block;
+  margin-right: 0;
+  width: 28px;
+  height: 27px;
+}
+
+.header__container {
+  justify-content: space-between;
+}
+
+.header__logo {
+ display: none;
+}
+
+.header__logo-1024 {
+  display: block;
+}
+
+.header__nav {
+  display: none;
+}
+
+.hero__login {
+  display: none;
+}
+
+.header__bottom {
+  display: none;
+}
+
+.hero {
+  padding-top: 113px;
+  padding-bottom: 115px;
+  margin-top: 0;
+}
