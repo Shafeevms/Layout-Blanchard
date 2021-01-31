@@ -418,6 +418,10 @@ max-width: 1085px;
   display: flex;
 }
 
+.gallery__description-tablet {
+  display: none;
+}
+
 .section-title-gallery {
   margin-bottom: 30px;
   transform: translateX(-6px);
@@ -1088,7 +1092,7 @@ max-width: 1085px;
   transition: color 0.3s ease;
 }
 
-.category__label:not(:last-child) {
+.category__item:not(:last-child) {
   margin-bottom: 14px;
 }
 

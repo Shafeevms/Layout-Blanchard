@@ -15,6 +15,7 @@
   <link rel="stylesheet" media="only screen and (max-width: 1919px)" href="./css/styles1920.css">
   <link rel="stylesheet" media="only screen and (max-width: 1449px)" href="./css/styles1450.css">
   <link rel="stylesheet" media="only screen and (max-width: 1199px)" href="./css/styles1199.css">
+  <link rel="stylesheet" media="only screen and (max-width: 1023px)" href="./css/styles1023.css">
 
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
@@ -248,7 +249,7 @@
               <div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery/Rectangle74.jpg" alt="" class="gallery__slider-img"></div>
               <div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery/Rectangle75.jpg" alt="" class="gallery__slider-img"></div>
               <div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery/Rectangle76.jpg" alt="" class="gallery__slider-img"></div>
-              <div class="swiper-slide gallery__swiper-slide" tabindex="1" data-id="1"><img src="./img/gallery/Rectangle77.jpg" alt="" class="gallery__slider-img"></div>
+              <div class="swiper-slide gallery__swiper-slide" tabindex="1" data-id="1"><img src="./img/gallery/Rectangle77.jpg" alt="" data-id="1" class="gallery__slider-img"></div>
               <div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery/Rectangle78.jpg" alt="" class="gallery__slider-img"></div>
               <div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery/Rectangle79.jpg" alt="" class="gallery__slider-img"></div>
               <div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery/Rectangle80.jpg" alt="" class="gallery__slider-img"></div>
@@ -283,6 +284,7 @@
               </div>
             </div>
         </div>
+        <p class="gallery__description-tablet white reset">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
       </div>
     </section>
     <section class="catalogue container">
@@ -552,7 +554,7 @@
             <a href="" class="cards__link">Подробнее</a>
           </div>
         </li>
-        <li class="cards__item">
+        <li class="cards__item tablet">
           <img src="./img/events/background3.jpg" alt="" class="cards__img">
           <div class="cards__container">
             <p class="cards__descr reset">Еврейский музей</p>
@@ -596,48 +598,75 @@
       <button class="events__button btn-white">Все события</button>
     </section>
     <section class="publication">
-      <div class="container flex">
+      <div class="container flex column">
         <aside class="publication__filter">
           <h2 class="section-title publication__title white reset">Издания</h2>
           <div class="publication__category category">
             <h3 class="category__title white reset">Категории</h3>
-            <form class="category__list reset">
-              <input type="checkbox" name="category" id="bestseller"  class="category__checkbox" >
-              <label for="bestseller" class="category__label" ><span class="label-text">Бестселлеры</span>
-              </label>
-              <input type="checkbox" name="category" id="art"  class="category__checkbox">
-              <label for="art" class="category__label" ><span class="label-text">Искусство</span>
-              </label>
-              <input type="checkbox" name="category" id="architecture"  class="category__checkbox">
-              <label for="architecture" class="category__label" ><span class="label-text">Архитектура</span>
-              </label>
-              <input type="checkbox" name="category" id="design"  class="category__checkbox" checked>
-              <label for="design" class="category__label" ><span class="label-text">Дизайн</span>
-              </label>
-              <input type="checkbox" name="category" id="fashion"  class="category__checkbox">
-              <label for="fashion" class="category__label" ><span class="label-text">Мода</span>
-              </label>
-              <input type="checkbox" name="category" id="kids"  class="category__checkbox">
-              <label for="kids" class="category__label" ><span class="label-text">Детям</span>
-              </label>
-              <input type="checkbox" name="category" id="fiction"  class="category__checkbox">
-              <label for="fiction" class="category__label" ><span class="label-text">Худождественная литература</span>
-              </label>
-              <input type="checkbox" name="category" id="publicism"  class="category__checkbox">
-              <label for="publicism" class="category__label" ><span class="label-text">Публицистика</span>
-              </label>
-              <input type="checkbox" name="category" id="guide"  class="category__checkbox">
-              <label for="guide" class="category__label" ><span class="label-text">Путеводители</span>
-              </label>
-              <input type="checkbox" name="category" id="philosophy"  class="category__checkbox">
-              <label for="philosophy" class="category__label" ><span class="label-text">Философия</span>
-              </label>
-              <input type="checkbox" name="category" id="educational"  class="category__checkbox">
-              <label for="educational" class="category__label" ><span class="label-text">Учебная литература</span>
-              </label>
-              <input type="checkbox" name="category" id="periodical"  class="category__checkbox">
-              <label for="periodical" class="category__label" ><span class="label-text">Журналы и газеты</span>
-              </label>
+            <form class="reset">
+              <ul class="category__list reset">
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="bestseller"  class="category__checkbox" >
+                  <label for="bestseller" class="category__label" ><span class="label-text">Бестселлеры</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="art"  class="category__checkbox">
+                  <label for="art" class="category__label" ><span class="label-text">Искусство</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="architecture"  class="category__checkbox">
+                  <label for="architecture" class="category__label" ><span class="label-text">Архитектура</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="design"  class="category__checkbox" checked>
+                  <label for="design" class="category__label" ><span class="label-text">Дизайн</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="fashion"  class="category__checkbox">
+                  <label for="fashion" class="category__label" ><span class="label-text">Мода</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="kids"  class="category__checkbox">
+                  <label for="kids" class="category__label" ><span class="label-text">Детям</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="fiction"  class="category__checkbox">
+                  <label for="fiction" class="category__label" ><span class="label-text">Худождественная литература</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="publicism"  class="category__checkbox">
+                  <label for="publicism" class="category__label" ><span class="label-text">Публицистика</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="guide"  class="category__checkbox">
+                  <label for="guide" class="category__label" ><span class="label-text">Путеводители</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="philosophy"  class="category__checkbox">
+                  <label for="philosophy" class="category__label" ><span class="label-text">Философия</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="educational"  class="category__checkbox">
+                  <label for="educational" class="category__label" ><span class="label-text">Учебная литература</span>
+                  </label>
+                </li>
+                <li class="category__item">
+                  <input type="checkbox" name="category" id="periodical"  class="category__checkbox">
+                  <label for="periodical" class="category__label" ><span class="label-text">Журналы и газеты</span>
+                  </label>
+                </li>
+
+              </ul>
             </form>
           </div>
           <div class="publication__wrapper">
@@ -664,7 +693,6 @@
                 <path d="M16 20L11 15L16 10" stroke="white"/>
                 </svg>
             </div>
-            <!-- If we need pagination -->
             <div class="swiper-pagination publication__swiper-pagination"></div>
             <div class="publication__swiper-button-next button-next">
               <svg class="gallery__svg" width="30" height="30" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -674,9 +702,7 @@
                 </svg>
             </div>
           </div>
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper publication__swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide publication__swiper-slide white">
               <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
               <div class="slide__wrapper">

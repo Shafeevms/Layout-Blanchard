@@ -37,7 +37,7 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
     prevEl: '.gallery__swiper-button-prev',
   },
   breakpoints: {
-    1024: {
+    768: {
       height: 400,
       slidesPerView: 2,
       slidesPerColumn: 2,
@@ -142,7 +142,8 @@ const openModal = e => {
     top: `${document.documentElement.clientHeight / 2 - 250}px`,
     left: `${document.documentElement.clientWidth / 2 - 450}px`
   }
-    if (e.target.classList.contains('gallery__swiper-slide')) {
+    if (e.target.classList.contains('gallery__swiper-slide')
+    || e.target.classList.contains('gallery__slider-img')) {
       const data = [...modalAPI].filter(el => el.id === +e.target.dataset.id);
       render(modalTemplate(data, modalWrong), '.modal');
       document.querySelector('.modal').classList.add('modal-visible');
@@ -161,7 +162,11 @@ document.querySelector('.gallery__swiper').addEventListener('click', openModal)
 
 document.querySelector('.events__button').addEventListener('click', function(e) {
   e.preventDefault();
-  document.querySelectorAll('.cards__item').forEach(item => item.classList.remove('d-none'));
+  document.querySelectorAll('.cards__item').forEach(item => {
+    item.classList.remove('d-none');
+    item.classList.remove('tablet');
+
+  });
   this.remove();
 })
 
@@ -179,7 +184,7 @@ const publicationSwiper = new Swiper('.publication__swiper', {
       slidesPerGroup: 3,
       spaceBetween: 50,
     },
-    1024: {
+    768: {
       speed: 1000,
       height: 900,
       direction: 'horizontal',
