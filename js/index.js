@@ -138,20 +138,20 @@ const modalTemplate = (data, wrongTemp) => {
 $( "#accordion" ).accordion();
 
 const openModal = e => {
-  let centerCoords = {
-    top: `${document.documentElement.clientHeight / 2 - 250}px`,
-    left: `${document.documentElement.clientWidth / 2 - 450}px`
-  }
+  // let centerCoords = {
+  //   top: `${document.documentElement.clientHeight / 2 - 250}px`,
+  //   left: `${document.documentElement.clientWidth / 2 - 450}px`
+  // }
     if (e.target.classList.contains('gallery__swiper-slide')
     || e.target.classList.contains('gallery__slider-img')) {
       const data = [...modalAPI].filter(el => el.id === +e.target.dataset.id);
       render(modalTemplate(data, modalWrong), '.modal');
       document.querySelector('.modal').classList.add('modal-visible');
-      document.querySelector('.modal').style.top = centerCoords.top;
-      document.querySelector('.modal-visible').style.left = centerCoords.left;
+      // document.querySelector('.modal').style.top = centerCoords.top;
+      // document.querySelector('.modal-visible').style.left = centerCoords.left;
     } else if (e.target.classList.contains('modal__btn')){
       document.querySelector('.modal').classList.remove('modal-visible');
-      document.querySelector('.modal').style.top = "-9999px";
+      // document.querySelector('.modal').style.top = "-9999px";
     }
 
 }
@@ -184,7 +184,7 @@ const publicationSwiper = new Swiper('.publication__swiper', {
       slidesPerGroup: 3,
       spaceBetween: 50,
     },
-    768: {
+    1024: {
       speed: 1000,
       height: 900,
       direction: 'horizontal',
@@ -193,6 +193,16 @@ const publicationSwiper = new Swiper('.publication__swiper', {
       slidesPerColumnFill: 'row',
       slidesPerGroup: 2,
       spaceBetween: 50,
+    },
+    768: {
+      speed: 1000,
+      height: 900,
+      direction: 'horizontal',
+      slidesPerView: 2,
+      // slidesPerColumn: 1,
+      slidesPerColumnFill: 'row',
+      slidesPerGroup: 2,
+      spaceBetween: 34,
     },
   },
   navigation: {
@@ -239,6 +249,14 @@ const projectSwiper = new Swiper('.projects__swiper', {
     slidesPerColumnFill: 'row',
     slidesPerGroup: 2,
     spaceBetween: 50,
+   },
+   768: {
+    direction: 'horizontal',
+    speed: 1000,
+    slidesPerView: 2,
+    slidesPerColumnFill: 'row',
+    slidesPerGroup: 2,
+    spaceBetween: 34,
    }
  },
   navigation: {

@@ -670,10 +670,10 @@ max-width: 1085px;
 
 .modal {
   display: flex;
-  position: fixed;
-  /* top: 198px; */
+  position: absolute;
   left: -9999px;
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   z-index: 100;
   opacity: 0;
   box-shadow: 1px 1px 5px #ccc;
@@ -681,7 +681,9 @@ max-width: 1085px;
 }
 
 .modal-visible {
-  /* left: 125px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 1;
 }
 
@@ -728,11 +730,11 @@ max-width: 1085px;
 }
 
 .modal__btn {
-  position: absolute;
+  position: relative;
   background-color: transparent;
   background: url('../img/icons/close_btn.svg') no-repeat;
   top: 20px;
-  right: 20px;
+  right: 56px;
   width: 16px;
   height: 16px;
   border: none;
