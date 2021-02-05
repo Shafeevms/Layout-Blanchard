@@ -114,7 +114,6 @@
 }
 
 .category__list {
-  display: inline-block;
   display: flex;
   flex-flow: row wrap;
   height: 123px;
@@ -122,15 +121,21 @@
   justify-content: space-between;
   /* -moz-column-count: 3;
   -webkit-column-count: 3;
-  column-count: 3;
+  column-count: 3;s
   height: 114px;
   width: 100%; */
 }
 
 
-.category__item {
-  max-width: calc(100% / 3);
-  flex-basis: calc(100% / 3);
+.category__item:nth-child(3n+1) {
+  max-width: 36%;
+  flex-basis: 36%;
+}
+
+.category__item:nth-child(3n),
+.category__item:nth-child(3n+2) {
+  flex-basis: 28%;
+  max-width: 28%;
 }
 
 .publication__filter {
