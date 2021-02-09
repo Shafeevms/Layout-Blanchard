@@ -38,8 +38,6 @@
   height: 200px;
 }
 
-
-
 .cards__description {
   display: -webkit-box;
   -webkit-line-clamp: 7;
@@ -48,4 +46,8 @@
   max-width: 220px;
 }
 
+.header__form {
+  display: flex;
+  align-items: center;
+}
 

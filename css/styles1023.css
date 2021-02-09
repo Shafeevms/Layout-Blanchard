@@ -1,3 +1,7 @@
+.d-none {
+  display: none;
+}
+
 .header__top {
   padding-bottom: 29px;
 }
@@ -116,7 +120,6 @@
 .category__list {
   display: flex;
   flex-flow: row wrap;
-  height: 123px;
   width: 100%;
   justify-content: space-between;
   /* -moz-column-count: 3;
@@ -211,3 +214,14 @@
 #map {
   flex-basis: 338px;
 }
+
+.header__input {
+  width: 576px;
+}
+
+.close__search {
+  border: none;
+  background-color: transparent;
+}
+
+

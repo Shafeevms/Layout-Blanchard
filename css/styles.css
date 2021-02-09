@@ -82,6 +82,12 @@ a {
 
 .header__burger {
   display: none;
+  height: 40px;
+  width: 40px;
+  background: url('../img/icons/Burger.svg') no-repeat center;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
 }
 
 .header__logo {
@@ -145,6 +151,7 @@ a {
 
 .hero__form:hover .hero__btn,
 .hero__form:hover .hero__input {
+  display: block;
   color: #C283F3;
   border-color: #C283F3;
   cursor: pointer;

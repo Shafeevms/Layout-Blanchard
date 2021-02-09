@@ -38,3 +38,57 @@
   padding-bottom: 115px;
   margin-top: 0;
 }
+
+.header__input {
+  height: 40px;
+  width: 218px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+.burger__visible {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+}
+.burger__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger__left {
+}
+.burger__close {
+}
+.burger__nav {
+}
+.burger__list {
+}
+.reset {
+}
+.burger__item {
+}
+.burger__link {
+}
+.btn-white {
+}
+.burger__btn {
+}
+.burger__right {
+}
+.burger__news {
+}
+.burger__fact {
+}
+.burger__img {
+}
+.burger__text {
+}
+.burger__fact-date {
+}
