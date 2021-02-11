@@ -16,7 +16,10 @@
   <link rel="stylesheet" media="only screen and (max-width: 1449px)" href="./css/styles1450.css">
   <link rel="stylesheet" media="only screen and (max-width: 1199px)" href="./css/styles1199.css">
   <link rel="stylesheet" media="only screen and (max-width: 1023px)" href="./css/styles1023.css">
+  <link rel="stylesheet" media="only screen and (max-width: 767px)" href="./css/styles767.css">
+  <link rel="stylesheet" href="css/perfect-scrollbar.css">
 
+  <script src="./js/perfect-scrollbar.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -27,11 +30,10 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
 </head>
 <body>
-  <div class="burger__visible">
+  <div class="burger">
     <div class="container burger__container">
       <div class="burger__left">
         <button class="burger__close"></button>
-        <nav class="burger__nav">
           <ul class="burger__list reset">
             <li class="burger__item"><a href="#" class="burger__link">О&nbsp;нас</a></li>
             <li class="burger__item"><a href="#" class="burger__link">Галерея</a></li>
@@ -41,7 +43,6 @@
             <li class="burger__item"><a href="#" class="burger__link">Проекты</a></li>
             <li class="burger__item"><a href="#" class="burger__link">Контакты</a></li>
           </ul>
-        </nav>
         <button class="btn-white burger__btn">
           <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="currentColor"/>
@@ -50,7 +51,7 @@
         </button>
       </div>
       <div class="burger__right">
-        <ul class="burger__news reset">
+        <ul class="burger__news reset" >
           <li class="burger__fact">
             <img src="./img/burger1.jpg" alt="" class="burger__img">
             <p class="burger__text reset">Безусловно, реализация намеченных плановых заданий играет важную роль...</p>

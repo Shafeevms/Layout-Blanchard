@@ -1,0 +1,17 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 52px;
+}
+
+.hero__text {
+  font-weight: 400;
+  text-align: center;
+}

@@ -84,8 +84,9 @@ let items = document.querySelectorAll('.dropdown__list');
 
 items.forEach(el => {
   new SimpleBar(el);
-})
+});
 
+const ps = new PerfectScrollbar('.burger__news');
 
 // gallery-choise
 
@@ -319,3 +320,16 @@ document.querySelector('.header__top').addEventListener('click', function(e) {
   }
 
 });
+
+document.querySelector('.header__burger').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('.burger').classList.add('burger__visible');
+  document.querySelector('.header__top').classList.add('d-none');
+});
+
+document.querySelector('.burger__close').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('.burger').classList.remove('burger__visible');
+  document.querySelector('.header__top').classList.remove('d-none');
+})
+
