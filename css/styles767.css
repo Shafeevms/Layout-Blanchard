@@ -15,3 +15,11 @@
   font-weight: 400;
   text-align: center;
 }
+
+.burger__img {
+  width: 315px;
+}
+
+.burger__text {
+  max-width: 315px;
+}

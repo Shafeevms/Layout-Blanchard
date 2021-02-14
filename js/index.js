@@ -24,41 +24,85 @@ const heroSwiper = new Swiper('.hero', {
 
 })
 
-const gallerySwiper = new Swiper('.gallery__swiper', {
-  speed: 1000,
-  height: 900,
-  // slidesPerView: 3,
-  // slidesPerColumn: 2,
-  // slidesPerColumnFill: 'row',
-  // slidesPerGroup: 1,
-  // spaceBetween: 47,
-  navigation: {
-    nextEl: '.gallery__swiper-button-next',
-    prevEl: '.gallery__swiper-button-prev',
-  },
-  breakpoints: {
-    768: {
-      height: 400,
-      slidesPerView: 2,
-      slidesPerColumn: 2,
-      slidesPerGroup: 1,
-      spaceBetween: 35,
-      slidesPerColumnFill: 'row',
+const gallerySwiperInit = () => {
+  const gallerySwiper = new Swiper('.gallery__swiper', {
+    speed: 1000,
+    height: 900,
+    // slidesPerView: 3,
+    // slidesPerColumn: 2,
+    // slidesPerColumnFill: 'row',
+    // slidesPerGroup: 1,
+    // spaceBetween: 47,
+    navigation: {
+      nextEl: '.gallery__swiper-button-next',
+      prevEl: '.gallery__swiper-button-prev',
     },
-    1400: {
-      height: 900,
-      slidesPerView: 3,
-      slidesPerColumn: 2,
-      slidesPerGroup: 1,
-      spaceBetween: 47,
-      slidesPerColumnFill: 'row',
+    breakpoints: {
+      768: {
+        height: 400,
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 35,
+        slidesPerColumnFill: 'row',
+      },
+      1400: {
+        height: 900,
+        slidesPerView: 3,
+        slidesPerColumn: 2,
+        slidesPerGroup: 1,
+        spaceBetween: 47,
+        slidesPerColumnFill: 'row',
+      },
     },
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-})
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+  });
+  return gallerySwiper;
+}
+
+if (window.matchMedia('(max-width: 767px)').matches) {
+  const gallerySwiper = gallerySwiperInit();
+  gallerySwiper.removeAllSlides()
+  gallerySwiper.appendSlide([
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+    '<div class="swiper-slide gallery__swiper-slide" tabindex="1"><img src="./img/gallery-tablet/Rectangle69-2.jpg" alt="" class="gallery__slider-img"></div>',
+   ]);
+} else {
+  gallerySwiperInit();
+}
+
+
 
 // dropdown
 document.addEventListener('click', function(e) {
@@ -324,12 +368,13 @@ document.querySelector('.header__top').addEventListener('click', function(e) {
 document.querySelector('.header__burger').addEventListener('click', function(e) {
   e.preventDefault();
   document.querySelector('.burger').classList.add('burger__visible');
-  document.querySelector('.header__top').classList.add('d-none');
+  document.querySelector('.header__container').classList.add('invisible');
 });
 
 document.querySelector('.burger__close').addEventListener('click', function(e) {
   e.preventDefault();
   document.querySelector('.burger').classList.remove('burger__visible');
-  document.querySelector('.header__top').classList.remove('d-none');
+  document.querySelector('.header__header').classList.remove('invisible');
 })
 
+// замена свайпера в галерее
