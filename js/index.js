@@ -38,6 +38,13 @@ const gallerySwiperInit = () => {
       prevEl: '.gallery__swiper-button-prev',
     },
     breakpoints: {
+      320: {
+        height: 367,
+        slidesPerView: 1,
+        slidesPerColumn: 1,
+        slidesPerGroup: 1,
+        slidesPerColumnFill: 'row',
+      },
       768: {
         height: 400,
         slidesPerView: 2,
@@ -377,4 +384,17 @@ document.querySelector('.burger__close').addEventListener('click', function(e) {
   document.querySelector('.header__header').classList.remove('invisible');
 })
 
-// замена свайпера в галерее
+const eventsSwiper = new new Swiper('.events__swiper', {
+  direction: 'horizontal',
+  speed: 1000,
+  slidesPerView: 1,
+  slidesPerColumnFill: 'row',
+  slidesPerGroup: 1,
+  pagination: {
+    el: '.events__swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+})
+
+

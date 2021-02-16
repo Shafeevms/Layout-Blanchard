@@ -23,3 +23,77 @@
 .burger__text {
   max-width: 315px;
 }
+
+.gallery__filter {
+  margin-right: 0;
+}
+
+.choices {
+  width: auto;
+}
+
+.gallery__swiper {
+  height: 570px;
+  width: 320px;
+  align-self: center;
+}
+
+.gallery__swiper-slide {
+  display: flex;
+  justify-content: center;
+
+}
+
+.gallery__navigation {
+  transform: translate(83px, 208px);
+}
+
+.gallery__slider-img {
+  height: 367px;
+  width: 290px;
+}
+
+.gallery__form {
+  margin-bottom: 40px;
+}
+
+.title__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogue__description {
+  display: none;
+}
+
+.content__list {
+  height: auto;
+  flex-wrap: nowrap;
+}
+
+.events__button,
+.events__cards {
+  display: none;
+}
+
+.events__swiper {
+  display: block;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #666;
+}
+
+.events__swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.events__wrapper {
+  margin-bottom: 20px;
+}
+
+.catalogue__article {
+  margin-right: 0;
+}

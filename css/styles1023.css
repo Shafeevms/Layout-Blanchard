@@ -224,4 +224,14 @@
   background-color: transparent;
 }
 
+.events__button {
+  display: block;
+}
 
+.events__cards {
+  display: flex;
+}
+
+.events__swiper {
+  display: none;
+}
