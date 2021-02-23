@@ -16,7 +16,8 @@
   <link rel="stylesheet" media="only screen and (max-width: 1449px)" href="./css/styles1450.css">
   <link rel="stylesheet" media="only screen and (max-width: 1199px)" href="./css/styles1199.css">
   <link rel="stylesheet" media="only screen and (max-width: 1023px)" href="./css/styles1023.css">
-  <link rel="stylesheet" media="only screen and (max-width: 768px)" href="./css/styles767.css">
+  <link rel="stylesheet" media="only screen and (max-width: 767px)" href="./css/styles767.css">
+  <link rel="stylesheet" media="only screen and (max-width: 470px)" href="./css/styles470.css">
   <link rel="stylesheet" href="css/perfect-scrollbar.css">
 
   <script src="./js/perfect-scrollbar.min.js"></script>
@@ -730,6 +731,7 @@
           <h2 class="section-title publication__title white reset">Издания</h2>
           <div class="publication__category category">
             <h3 class="category__title white reset">Категории</h3>
+            <button class="category__btn-title">Категории</button>
             <form class="reset">
               <ul class="category__list reset">
                 <li class="category__item">
@@ -792,7 +794,6 @@
                   <label for="periodical" class="category__label" ><span class="label-text">Журналы и газеты</span>
                   </label>
                 </li>
-
               </ul>
             </form>
           </div>
@@ -913,6 +914,71 @@
             </div>
           </div>
         </div>
+        <ul class="publication__bookslist booklist reset">
+          <li class="book">
+            <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Искусство цвета</h3>
+            <h3 class="slide__name reset">Иттен, Ирханнес</h3>
+            <h3 class="slide__price reset">620 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+          <li class="book">
+            <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Типографика</h3>
+            <h3 class="slide__name reset">Рудер, Эмиль</h3>
+            <h3 class="slide__price reset">2450 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+          <li class="book">
+            <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Книга про буквы</h3>
+            <h3 class="slide__name reset">Гордон, Юрий</h3>
+            <h3 class="slide__price reset">2200 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+          <li class="book">
+            <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Искусство цвета</h3>
+            <h3 class="slide__name reset">Иттен, Ирханнес</h3>
+            <h3 class="slide__price reset">620 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+          <li class="book">
+            <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Типографика</h3>
+            <h3 class="slide__name reset">Рудер, Эмиль</h3>
+            <h3 class="slide__price reset">2450 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+          <li class="book">
+            <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Книга про буквы</h3>
+            <h3 class="slide__name reset">Гордон, Юрий</h3>
+            <h3 class="slide__price reset">2200 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+          <li class="book">
+            <img src="./img/publication/1.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Искусство цвета</h3>
+            <h3 class="slide__name reset">Иттен, Ирханнес</h3>
+            <h3 class="slide__price reset">620 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+          <li class="book">
+            <img src="./img/publication/2.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Типографика</h3>
+            <h3 class="slide__name reset">Рудер, Эмиль</h3>
+            <h3 class="slide__price reset">2450 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+          <li class="book">
+            <img src="./img/publication/3.jpg" alt="" class="publication__slider-img">
+            <h3 class="slide__description reset">Книга про буквы</h3>
+            <h3 class="slide__name reset">Гордон, Юрий</h3>
+            <h3 class="slide__price reset">2200 руб</h3>
+            <button class="slide__btn"><span class="btn-text">Заказать</span></button>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="projects container">
@@ -960,20 +1026,35 @@
           <div class="contact-card contacts__contact-card">
             <h3 class="contact-cart__title reset">Шоурум №4</h3>
             <address class="contact-card__address">Леонтьевский переулок, дом 5, строение 1</address>
-            <form action="GET" class="contact-card__form">
-              <h3 class="contact-card__legend">Заказать обратный звонок</h3>
-              <input name="name" type="text" class="contact-card__input" placeholder="Имя*">
-              <input name="surname" type="tel" class="contact-card__input" placeholder="Телефон*">
-              <button type="submit" class="btn-white contact-card__btn">Заказать</button>
-            </form>
-            <h3 class="contact-card__legend reset">Связаться в один клик</h3>
-            <ul class="contacts__list flex reset">
-              <li class="contacts__item"><a href="#" class="contacts__link"><img src="./img/icons/Whatsapp-Icon.svg" alt="whatsapp" class="contacts__social"></a></li>
-              <li class="contacts__item"><a href="#" class="contacts__link"><img src="./img/icons/TelegramLogo.svg" alt="telegram" class="contacts__social"></a></li>
-            </ul>
+            <div class="tablet__wrapper">
+              <form action="GET" class="contact-card__form">
+                <h3 class="contact-card__legend">Заказать обратный звонок</h3>
+                <input name="name" type="text" class="contact-card__input" placeholder="Имя*">
+                <input name="surname" type="tel" class="contact-card__input" placeholder="Телефон*">
+                <button type="submit" class="btn-white contact-card__btn">Заказать</button>
+              </form>
+              <h3 class="contact-card__legend reset">Связаться в один клик</h3>
+              <ul class="contacts__list flex reset">
+                <li class="contacts__item"><a href="#" class="contacts__link"><img src="./img/icons/Whatsapp-Icon.svg" alt="whatsapp" class="contacts__social"></a></li>
+                <li class="contacts__item"><a href="#" class="contacts__link"><img src="./img/icons/TelegramLogo.svg" alt="telegram" class="contacts__social"></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div id="map"></div>
+        <div class="tablet__wrapper-767">
+          <form action="GET" class="contact-card__form">
+            <h3 class="contact-card__legend">Заказать обратный звонок</h3>
+            <input name="name" type="text" class="contact-card__input" placeholder="Имя*">
+            <input name="surname" type="tel" class="contact-card__input" placeholder="Телефон*">
+            <button type="submit" class="btn-white contact-card__btn">Заказать</button>
+          </form>
+          <h3 class="contact-card__legend reset">Связаться в один клик</h3>
+          <ul class="contacts__list flex reset">
+            <li class="contacts__item"><a href="#" class="contacts__link"><img src="./img/icons/Whatsapp-Icon.svg" alt="whatsapp" class="contacts__social"></a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link"><img src="./img/icons/TelegramLogo.svg" alt="telegram" class="contacts__social"></a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>

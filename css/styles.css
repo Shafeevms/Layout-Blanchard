@@ -1548,3 +1548,14 @@ max-width: 1085px;
   color: #C283F3;
   outline: none;
 }
+
+.category__btn {
+  display: none;
+}
+
+.tablet__wrapper-767,
+.booklist,
+.category__btn-title,
+.events__swiper {
+  display: none;
+}

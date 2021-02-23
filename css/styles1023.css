@@ -164,7 +164,7 @@
 }
 
 .publication {
-  padding-bottom: 81px;
+  padding-bottom: 76px;
 }
 .publication__category {
   margin-bottom: 32px;
@@ -177,8 +177,12 @@
 .publication__wrapper {
   display: block;
   position: relative;
-  top: auto;
+  top: -5px;
   right: auto;
+}
+
+.publication__swiper-wrapper {
+  padding-left: 27px;
 }
 
 .publication__legend {
@@ -232,6 +236,4 @@
   display: flex;
 }
 
-.events__swiper {
-  display: none;
-}
+

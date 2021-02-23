@@ -309,6 +309,13 @@ const projectSwiper = new Swiper('.projects__swiper', {
     slidesPerColumnFill: 'row',
     slidesPerGroup: 2,
     spaceBetween: 34,
+   },
+   320: {
+    direction: 'horizontal',
+    speed: 1000,
+    slidesPerView: 1,
+    slidesPerColumnFill: 'row',
+    slidesPerGroup: 1,
    }
  },
   navigation: {
@@ -384,7 +391,7 @@ document.querySelector('.burger__close').addEventListener('click', function(e) {
   document.querySelector('.header__header').classList.remove('invisible');
 })
 
-const eventsSwiper = new new Swiper('.events__swiper', {
+const eventsSwiper = new Swiper('.events__swiper', {
   direction: 'horizontal',
   speed: 1000,
   slidesPerView: 1,
@@ -397,4 +404,11 @@ const eventsSwiper = new new Swiper('.events__swiper', {
   },
 })
 
+document.querySelector('.category__btn-title').addEventListener('click', function(e) {
+  document.querySelectorAll('.category__checkbox').forEach(el => {
+    if (!el.checked) {
+      el.closest('.category__item').classList.add('d-none');
+    }
+  })
+})
 

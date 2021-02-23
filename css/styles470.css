@@ -1,0 +1,31 @@
+.events__swiper-slide {
+  padding: 0;
+}
+
+.hero__title {
+  font-size: 32px;
+}
+
+.hero__button,
+.hero__text {
+  font-size: 12px;
+}
+
+.container {
+  padding: 0 15px;
+
+}
+
+.section-title {
+  font-size: 28px;
+}
+
+.about-us__text {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.accordion__btn {
+  font-size: 18px;
+}
+
