@@ -1,8 +1,32 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hero__container {
+  min-width: 280px;
+}
+
+.header__burger {
+  width: 20px;
+  height: 15px;
+}
+
+.btn-svg {
+  width: 16px;
+  height: 16px;
+}
+.header__logo-1024 {
+  width: 97px;
+  height: auto;
+}
+
 .events__swiper-slide {
   padding: 0;
 }
 
 .hero__title {
+  margin-bottom: 10px;
   font-size: 32px;
 }
 
@@ -11,9 +35,22 @@
   font-size: 12px;
 }
 
-.container {
-  padding: 0 15px;
+.header__top {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
 
+.hero__slide-img {
+  height: 309px;
+}
+
+.hero {
+  height: 310px;
+  padding: 0;
+}
+
+.hero__container {
+  padding-top: 35px;
 }
 
 .section-title {
@@ -29,3 +66,54 @@
   font-size: 18px;
 }
 
+.publication__input {
+  width: 71px;
+}
+
+.publication__fieldset {
+  padding-left: 10px;
+  width: 290px;
+}
+
+.publication__form-text {
+  margin-right: 0;
+}
+
+.hero__text {
+  margin-bottom: 40px;
+  line-height: 17px;
+  max-width: 270px;
+}
+
+.hero__button {
+  padding: 10px 16px;
+}
+
+.about-us {
+  padding-top: 54px;
+  padding-bottom: 41px;
+}
+
+.about-us__title {
+  margin-bottom: 14px;
+}
+
+.gallery {
+  padding-top: 53px;
+}
+
+.section-title-gallery {
+  margin-bottom: 22px;
+}
+
+.gallery__field {
+  padding-top: 10px;
+}
+
+.gallery__navigation {
+  transform: translate(94px, 188px);
+}
+
+.gallery__swiper {
+  height: 517px;
+}
