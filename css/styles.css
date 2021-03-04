@@ -902,11 +902,6 @@ max-width: 1085px;
   transform: rotate(180deg);
 }
 
-.accordion__content {
-}
-.content {
-}
-
 .content__list {
   margin: 0;
   padding: 32px 0;
