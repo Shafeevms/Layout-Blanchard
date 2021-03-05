@@ -297,3 +297,23 @@
   width: 115px;
   height: 40px;
 }
+
+.modal {
+  width: 100%;
+  flex-direction: column-reverse;
+}
+
+.modal__img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.modal__article {
+  max-width: 100%;
+  width: 100%;
+}
+
+.modal__btn {
+  top: 85px;
+  left: 290px;
+}

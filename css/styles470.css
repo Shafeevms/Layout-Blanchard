@@ -238,27 +238,30 @@
 }
 
 .burger__visible {
-  height: 409px;
+  height: 355px;
+}
 
+.burger__close {
+  margin-bottom: 22px;
+  width: 15px;
+  height: 15px;
 }
 
 .burger__item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .burger__container {
-  padding-bottom: 20px;
-  height: 409px;
+  padding-top: 15px;
+  height: 353px;
 }
 
 .burger__right {
-  padding-top: 70px;
-  padding-bottom: 15px;
-
 }
 
 .burger__btn {
   bottom: 25px;
+  font-size: 12px;
 }
 
 .burger__text {
@@ -356,4 +359,8 @@
 
 .social-list__item:not(:last-child) {
     margin-right: 13px;
+}
+
+.modal__img {
+  height: 420px;
 }

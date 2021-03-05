@@ -1,0 +1,21 @@
+.invisible {
+  z-index: -1;
+}
+
+.burger__img {
+  width: 130px;
+  height: 60px;
+}
+
+.burger__text {
+  max-width: 130px;
+}
+
+.burger__btn > svg {
+  width: 10px;
+}
+
+.burger__fact-date {
+  display: none;
+}
+

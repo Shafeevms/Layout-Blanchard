@@ -388,7 +388,7 @@ document.querySelector('.header__burger').addEventListener('click', function(e) 
 document.querySelector('.burger__close').addEventListener('click', function(e) {
   e.preventDefault();
   document.querySelector('.burger').classList.remove('burger__visible');
-  document.querySelector('.header__header').classList.remove('invisible');
+  document.querySelector('.header').classList.remove('invisible');
 })
 
 const eventsSwiper = new Swiper('.events__swiper', {
