@@ -83,7 +83,10 @@ body {
 }
 
 .burger__item {
+}
 
+.cards__item:not(:nth-child(3n)) {
+  margin-right: 27px;
 }
 
 .burger__item:not(:last-child) {
@@ -162,3 +165,5 @@ body {
   font-size: 12px;
   font-weight: 600;
 }
+
+

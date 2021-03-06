@@ -347,14 +347,17 @@ function init(){
   myMap.controls.remove('typeSelector');
   myMap.controls.remove('routeButtonControl');
   myMap.controls.add('geolocationControl');
+
+  if (window.matchMedia('(max-width: 1024px)').matches) {
+    myMap.behaviors.disable('drag');
+    myMap.behaviors.disable('scrollZoom');
+  }
 };
 
 // search header
 
 document.querySelector('.header__top').addEventListener('click', function(e) {
-  // console.log(e.target)
   if (e.target.classList.contains('header__burger')) {
-    console.log(2)
     e.stopPropagation();
   }
   if (e.target.classList.contains('header__btn') || e.target.classList.contains('btn-svg')) {

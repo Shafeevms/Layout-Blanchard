@@ -22,7 +22,7 @@
 .events__cards {
   margin: 0 auto;
   margin-bottom: 10px;
-  max-width: 950px;
+  max-width: 1000px;
 }
 
 .cards__item {
@@ -30,7 +30,7 @@
 }
 
 .cards__item:not(:nth-child(3n)) {
-  margin-right: 27px;
+  margin-right: 60px;
 }
 
 .cards__img {
