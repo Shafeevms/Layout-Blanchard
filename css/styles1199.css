@@ -122,9 +122,11 @@ body {
   background-color: #fff !important;
   overflow-x: visible !important;
 }
+
 .ps__rail-x {
   overflow: visible !important;
 }
+
 .ps__thumb-y {
   right: -9px !important;
   height: 20px !important;
