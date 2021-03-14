@@ -364,3 +364,47 @@
 .modal__img {
   height: 420px;
 }
+
+.contacts__social {
+  width: 50px;
+}
+
+.footer__container {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.tablet__wrapper-767 {
+  padding-bottom: 27px;
+}
+
+.social-list__img {
+  height: 50px;
+  width: 50px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.footer__socail {
+  margin-bottom: 15px;
+}
+
+.footer__logo {
+  height: 22px;
+}
+
+.modal-content {
+  padding: 0;
+}
+
+.modal__btn {
+  top: 30px;
+  right: 30px;
+}

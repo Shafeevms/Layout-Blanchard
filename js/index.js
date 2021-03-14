@@ -158,56 +158,50 @@ const modalAPI = [
 ];
 
 const modalWrong = `
-<img src="./img/modal/wrong.png" alt="" class="modal__img">
-<article class="modal__article article">
-  <h2 class="article__artist reset">Что-то пошло не так...</h2>
-  </article>
-  <button class="modal__btn"></button>
-`
+  <div class="modal-content">
+    <img src="./img/modal/wrong.png" alt="" class="modal__img">
+    <article class="modal__article article">
+      <h2 class="article__artist reset">Что-то пошло не так...</h2>
+    </article>
+    <button class="modal__btn"></button>
+  </div>`
 
 
 const modalTemplate = (data, wrongTemp) => {
  if (data.length === 0) {
   return wrongTemp;
-
   } else {
     const [ { url, artistName, stateOfArt, years, description } ] = data;
     return `
-    <img src="./img/modal/${url}" alt="${artistName} ${stateOfArt}" class="modal__img">
-    <article class="modal__article article">
-      <h2 class="article__artist reset">${artistName}</h2>
-      <h3 class="article__name reset">“${stateOfArt}”</h3>
-      <h4 class="article__years reset">${years}</h4>
-      <p class="article__description reset">
-      ${description}
-      </p>
-    </article>
-    <button class="modal__btn"></button>
-
-    `;
+    <div class="modal-content">
+      <img src="./img/modal/${url}" alt="${artistName} ${stateOfArt}" class="modal__img">
+      <article class="modal__article article">
+        <h2 class="article__artist reset">${artistName}</h2>
+        <h3 class="article__name reset">“${stateOfArt}”</h3>
+        <h4 class="article__years reset">${years}</h4>
+        <p class="article__description reset">
+        ${description}
+        </p>
+      </article>
+      <button class="modal__btn"></button>
+    </div>`;
   }
 }
+
 $( "#accordion" ).accordion();
 
 const openModal = e => {
-  // let centerCoords = {
-  //   top: `${document.documentElement.clientHeight / 2 - 250}px`,
-  //   left: `${document.documentElement.clientWidth / 2 - 450}px`
-  // }
     if (e.target.classList.contains('gallery__swiper-slide')
     || e.target.classList.contains('gallery__slider-img')) {
       const data = [...modalAPI].filter(el => el.id === +e.target.dataset.id);
       render(modalTemplate(data, modalWrong), '.modal');
       document.querySelector('.modal').classList.add('modal-visible');
-      // document.querySelector('.modal').style.top = centerCoords.top;
-      // document.querySelector('.modal-visible').style.left = centerCoords.left;
-    } else if (e.target.classList.contains('modal__btn')){
+    } else if (e.target.classList.contains('modal__btn')) {
       document.querySelector('.modal').classList.remove('modal-visible');
-      // document.querySelector('.modal').style.top = "-9999px";
     }
-
 }
-document.querySelector('.gallery__swiper').addEventListener('click', openModal)
+
+document.querySelector('.gallery').addEventListener('click', openModal)
 
 
 // EVENTS
@@ -415,3 +409,12 @@ document.querySelector('.category__btn-title').addEventListener('click', functio
   })
 })
 
+// send form
+const form = document.querySelector('.contact-card__form');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const response = await fetch('../mail.php', {
+    method: 'POST',
+    body: new FormData(form)
+  })
+})

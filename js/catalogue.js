@@ -811,6 +811,7 @@ const accordionItem = data => {
 const render = (string, selector) => {
   document.querySelector(selector).innerHTML = string;
 }
+
 let lg = '';
 document.querySelector('.catalogue').addEventListener('click', function(e) {
   lg = e.target.dataset.lg;
@@ -883,3 +884,17 @@ render(catalogueTemplate(storeRU), '.catalogue')
 $( "#accordion" ).accordion();
 
 
+// scroll
+
+const anchors = document.querySelectorAll('.content__link');
+const block = document.querySelector('.catalogue__article');
+
+anchors.forEach(anc => {
+  anc.addEventListener('click', (e) => {
+    e.preventDefault();
+    block.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+})

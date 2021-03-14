@@ -8,6 +8,7 @@
 }
 
 body {
+  position: relative;
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 16px;
@@ -531,6 +532,8 @@ max-width: 1085px;
   position: relative;
   outline: none;
   z-index: 15;
+  width: 100%;
+  max-width: 100%;
 }
 
 .gallery__swiper-slide:focus {
@@ -694,22 +697,28 @@ max-width: 1085px;
 /* gallery modal window */
 
 .modal {
-  display: flex;
   position: absolute;
   left: -9999px;
-  max-width: 900px;
-  width: 100%;
-  z-index: 100;
   opacity: 0;
-  box-shadow: 1px 1px 5px #ccc;
   transition: opacity 0.8s ease;
 }
 
 .modal-visible {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000000bd;
   opacity: 1;
+  z-index: 15;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
 }
 
 .modal__img {
@@ -720,6 +729,7 @@ max-width: 1085px;
 }
 
 .modal__article {
+  /* position: relative; */
   padding-top: 124px;
   padding-left: 48px;
   padding-right: 50px;
@@ -757,11 +767,11 @@ max-width: 1085px;
 .modal__btn {
   position: relative;
   background-color: transparent;
-  background: url('../img/icons/close_btn.svg') no-repeat;
+  background: url('../img/icons/close_btn.svg') center no-repeat;
   top: 20px;
   right: 56px;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border: none;
   cursor: pointer;
 }

@@ -298,7 +298,8 @@
   height: 40px;
 }
 
-.modal {
+.modal-content {
+  padding: 0 20px;
   width: 100%;
   flex-direction: column-reverse;
 }
@@ -309,11 +310,13 @@
 }
 
 .modal__article {
+  position: relative;
   max-width: 100%;
   width: 100%;
 }
 
 .modal__btn {
-  top: 85px;
-  left: 290px;
+  position: absolute;
+  top: 30px;
+  right: 50px;
 }

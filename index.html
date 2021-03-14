@@ -283,6 +283,7 @@
       </div>
     </section>
     <section class="gallery">
+      <div class="modal"></div>
       <div class="container gallery__container">
         <div class="gallery__filter">
           <h2 class="section-title section-title-gallery white reset">Галерея</h2>
@@ -299,8 +300,6 @@
           <p class="gallery__description white reset">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
         </div>
         <div class="gallery__swiper">
-          <div class="modal">
-          </div>
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper gallery__swiper-wrapper">
               <!-- Slides -->
@@ -1014,8 +1013,9 @@
             <h3 class="contact-cart__title reset">Шоурум №4</h3>
             <address class="contact-card__address">Леонтьевский переулок, дом 5</address>
             <div class="tablet__wrapper">
-              <form action="GET" class="contact-card__form">
+              <form action="mailto:m_shafeev@bk.ru" method="POST" enctype="text/plain" class="contact-card__form">
                 <h3 class="contact-card__legend">Заказать обратный звонок</h3>
+                <input type="hidden" name="form_subject" value="Тема письма">
                 <input name="name" type="text" class="contact-card__input" placeholder="Имя*">
                 <input name="surname" type="tel" class="contact-card__input" placeholder="Телефон*">
                 <button type="submit" class="btn-white contact-card__btn">Заказать</button>
@@ -1030,8 +1030,9 @@
         </div>
         <div id="map"></div>
         <div class="tablet__wrapper-767">
-          <form action="GET" class="contact-card__form">
+          <form action="mailto:m_shafeev@bk.ru" enctype="text/plain" method="POST" class="contact-card__form">
             <h3 class="contact-card__legend reset">Заказать обратный звонок</h3>
+            <input type="hidden" name="form_subject" value="Тема письма">
             <input name="name" type="text" class="contact-card__input" placeholder="Имя*">
             <input name="surname" type="tel" class="contact-card__input" placeholder="Телефон*">
             <button type="submit" class="btn-white contact-card__btn">Заказать</button>
